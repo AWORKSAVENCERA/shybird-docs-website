@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Avencera Shybird - Trust
+title: Shybird Documentation
 tagline: The trusted platform for awarding organisations
 email: markberthelemy@avencera.ai
 description: >- # this means to ignore newlines until "baseurl:"
@@ -26,14 +26,24 @@ description: >- # this means to ignore newlines until "baseurl:"
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "https://docs.shybird.ai" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: 
+github_username:  
 
 # Build settings
-theme: minima
+theme: just-the-docs
 plugins:
   - jekyll-feed
+
+include:
+  - _pages
+
+defaults:
+  - scope:
+      path: "_pages"
+      type: "pages"
+#    values:
+#      permalink: :path/:basename/ # make URL of pages in the folder _pages as on the root.
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -54,3 +64,9 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# Just the Docs config
+
+logo: "/assets/images/avencera-logo-light.png"
+favicon_ico: "/assets/images/Avancera_FAVICON 32x32.jpg"
+color_scheme: avencera

@@ -1,0 +1,16 @@
+---
+layout: null
+title: LLMS.txt
+---
+ 
+# LLM Feed for {{ site.url }}
+_Generated: {{ site.time | date_to_rfc822 }}_
+ 
+ 
+## All pages
+{% for page in site.pages %}{% if page.url contains '.xml' or page.url contains 'assets' %}{% else %}- [{{ page.title }}]({{ page.url }}){% endif %}
+{% endfor %}
+
+## All posts 
+{% for post in site.posts %}- [{{ post.title }}]({{ site.url }}{{ post.url }})
+{% endfor %}
