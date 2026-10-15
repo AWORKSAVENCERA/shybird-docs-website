@@ -1,0 +1,35 @@
+name: Deploy Staging Site  
+ 
+# Trigger on pushes to the staging branch  
+on:  
+  push:  
+    branches: [ "staging" ]  
+ 
+jobs:  
+  build-and-deploy:  
+    runs-on: ubuntu-latest  
+    steps:  
+      # Step 1: Check out the code from the staging branch  
+      - name: Checkout staging  
+        uses: actions/checkout@v4  
+ 
+      # Step 2: (Optional) Build your site (same as production)  
+      # Example for Jekyll:  
+      - name: Set up Ruby  
+        uses: ruby/setup-ruby@v1  
+        with:  
+          ruby-version: '3.2'  
+      - name: Install dependencies  
+        run: bundle install  
+      - name: Build Jekyll site  
+        run: bundle exec jekyll build --destination _site  
+ 
+      # Step 3: Deploy to gh-pages branch (staging subdirectory)  
+      - name: Deploy to Staging  
+        uses: peaceiris/actions-gh-pages@v4  
+        with:  
+          github_token: ${{ secrets.GITHUB_TOKEN }}  
+          publish_branch: gh-pages  
+          publish_dir: _site                            # Same as production (e.g., _site for generators)  
+          destination_dir: staging                  # Deploy to /staging in gh-pages  
+          force_orphan: false                       # Don’t overwrite production files in gh-pages
