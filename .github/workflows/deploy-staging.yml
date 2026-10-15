@@ -30,6 +30,6 @@ jobs:
         with:  
           github_token: ${{ secrets.GITHUB_TOKEN }}  
           publish_branch: gh-pages  
-          publish_dir: _site                            # Same as production (e.g., _site for generators)  
+          publish_dir: ./_site                            # Same as production (e.g., _site for generators)  
           destination_dir: staging                  # Deploy to /staging in gh-pages  
           force_orphan: false                       # Don’t overwrite production files in gh-pages
