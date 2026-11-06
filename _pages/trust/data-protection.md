@@ -2,7 +2,7 @@
 title: Data protection and privacy
 layout: default2
 parent: Trust
-permalink: /trust/privacy
+permalink: /trust/data-protection
 ---
 ## Purpose
 
