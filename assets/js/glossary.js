@@ -70,6 +70,12 @@
     return ranges.some(function (r) { return start >= r[0] && end <= r[1]; });
   }
 
+  // Skip matches that are part of an email address, web address or file name,
+  // such as "avencera" and "ai" in no-reply@avencera.ai.
+  function inAddress(text, start, end) {
+    return /[@./:]$/.test(text.slice(0, start)) || /^[@./:]\w/.test(text.slice(end));
+  }
+
   // Only the first use of each term on the page is highlighted.
   var done = new Set();
 
@@ -100,7 +106,7 @@
       var start = match.index + match[1].length;
       var word = match[2];
       var entry = byForm[word.toLowerCase()];
-      if (done.has(entry) || inRanges(quotes, start, start + word.length)) continue;
+      if (done.has(entry) || inRanges(quotes, start, start + word.length) || inAddress(text, start, start + word.length)) continue;
       done.add(entry);
 
       frag = frag || document.createDocumentFragment();
