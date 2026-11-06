@@ -1,4 +1,32 @@
+// Avencera colour scheme, built on the theme's dark scheme.
+// Every colour comes from the Avencera brand guidelines palette (Minchki
+// Studio, 2025). Contrast ratios are against the Black page background.
 @import "./color_schemes/dark";
 
-$link-color: $yellow-100;
-$nav-child-link-color: $grey-lt-100;
+// The $brand-* palette is defined in _sass/custom/setup.scss.
+
+// Page and sidebar
+$body-background-color: $brand-black;
+$sidebar-color: $brand-black;
+
+// Text: Beige on Black is about 17:1 (WCAG 1.4.3)
+$body-heading-color: $brand-beige;
+$body-text-color: $brand-beige;
+$nav-child-link-color: $brand-beige;
+$search-result-preview-color: $brand-beige;
+
+// Links and accents: Orange on Black is about 7.4:1 (WCAG 1.4.3)
+$link-color: $brand-orange;
+$btn-primary-color: $brand-orange; // text set to Black in custom.scss
+
+// Panels and borders
+$base-button-color: $brand-dark-blue;
+$table-background-color: $brand-dark-blue;
+// Search results sit on Black; the hovered or keyboard-selected result
+// ($feedback-color) is Dark Blue, with an Orange bar added in custom.scss.
+$search-background-color: $brand-black;
+$feedback-color: $brand-dark-blue;
+$code-background-color: $brand-black;
+$code-linenumber-color: $brand-grey;
+// About 5.3:1 on Black, so borders on inputs pass WCAG 1.4.11.
+$border-color: $brand-black-tint-50;

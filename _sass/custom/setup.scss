@@ -1,0 +1,16 @@
+// Loaded by Just the Docs before the colour scheme and modules, so values set
+// here override the theme's defaults.
+
+// Avencera brand palette (brand guidelines, Minchki Studio 2025). It's defined
+// here rather than in the colour scheme because the theme also compiles its
+// stock light and dark stylesheets, which load custom.scss but not our scheme.
+$brand-black: #000000;
+$brand-beige: #f0ebe0;
+$brand-orange: #ff6b30;
+$brand-grey: #bcbbb9;
+$brand-dark-blue: #0a3146;
+$brand-black-tint-50: #808080; // the palette's 50% tint of Black
+
+// Body typeface from the Avencera brand guidelines: Helvetica Neue, with Arial
+// as the stated alternative.
+$body-font-family: "Helvetica Neue", helvetica, arial, sans-serif;
