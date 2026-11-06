@@ -5,12 +5,18 @@ on:
   push:  
     branches: [ "staging" ]  
  
-jobs:  
+# Read-only by default; only the deploy job gets write access.
+permissions:
+  contents: read
+
+jobs:
   accessibility:
     uses: ./.github/workflows/accessibility.yml
 
   build-and-deploy:  
     needs: accessibility    # only deploy if the WCAG 2.2 AA checks pass
+    permissions:
+      contents: write       # push the built site to the gh-pages branch
     runs-on: ubuntu-latest  
     steps:  
       # Step 1: Check out the code from the staging branch  
