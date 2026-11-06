@@ -23,44 +23,309 @@
 #
 # Keep the list in alphabetical order.
 
+- term: Adequacy regulations
+  definition: UK rules that recognise a country outside the UK as protecting personal data to an adequate standard, so personal data can be sent there without extra safeguards.
+
+- term: Admin
+  definition: The person at your organisation who enrols you on courses and can give you your sign-in page address. Contact them if you can't sign in.
+  scope: [/deliver]
+
+- term: Admin Centre
+  definition: Where your organisation manages its Shybird users and subscriptions.
+  aliases: [Administration Centre]
+
+- term: AI
+  definition: Short for artificial intelligence. Computer systems that can carry out tasks such as generating, summarising or classifying content.
+  aliases: [artificial intelligence]
+
+- term: Alternative text
+  definition: A short text description of an image, read out by screen readers for people who can't see it.
+  aliases: [alt text]
+
+- term: Anonymisation
+  definition: Removing or changing information so that it can no longer be linked to any individual.
+
+- term: Assistive technology
+  definition: Software or equipment that helps disabled people use digital services, such as screen readers, magnifiers and voice control.
+  aliases: [assistive technologies]
+
+- term: Automated decision-making
+  definition: Decisions about people made by a computer system with no meaningful human involvement. UK GDPR restricts decisions like this when they have legal or similarly significant effects.
+  aliases: [automated decisions]
+
+- term: Avencera
+  definition: Avencera Ltd, the company that provides Shybird.
+
+- term: BCDR
+  definition: Short for business continuity and disaster recovery. How services keep running, or are restored, after a disruption such as a cloud outage or cyber incident.
+
 - term: Certificate
   definition: Your proof that you've completed a course. You can download it once you've finished everything in your learning path.
   aliases: [certificates]
   scope: [/deliver]
 
+- term: Content Questions
+  definition: The menu item that opens the Learning Assistant, where you can ask questions about your course content.
+  scope: [/deliver]
+
 - term: Course
-  definition: A complete learning programme that you're enrolled on, made up of modules.
+  definition: A complete learning programme made up of modules. You can study the courses you're enrolled on and register interest in others.
   aliases: [courses]
   scope: [/deliver]
 
+- term: Cryptographic erasure
+  definition: Making encrypted data permanently unreadable by destroying the keys needed to decrypt it.
+
+- term: Data classification
+  definition: Labelling information by how sensitive it is, so it can be given the right level of protection.
+
+- term: Data controller
+  definition: The organisation that decides why and how personal data is processed, and is responsible for meeting the data protection obligations that go with it.
+
+- term: Data minimisation
+  definition: Collecting and keeping only the personal data that is needed for a specific purpose.
+
+- term: Data processor
+  definition: An organisation that processes personal data on behalf of a data controller, only on the controller's documented instructions.
+  aliases: [processor, processors]
+  scope: [/trust]
+
+- term: Data Protection Act 2018
+  definition: The UK law that sits alongside UK GDPR and sets out how personal data must be handled in the UK.
+
+- term: Data residency
+  definition: The country or region where data is physically stored.
+
+- term: Defence in depth
+  definition: Using several layers of security controls, so that if one fails, others still protect the system.
+
+- term: Emergency change
+  definition: A change made to deal with a critical incident, security vulnerability or urgent operational issue. It is reviewed and approved after it has been made.
+  aliases: [emergency changes]
+  scope: [/trust]
+
+- term: Encryption at rest
+  definition: Encrypting data while it is stored, so it can't be read if the storage is accessed without permission.
+
+- term: Encryption in transit
+  definition: Encrypting data while it moves between systems, for example between your browser and the platform, so it can't be read if intercepted.
+
+- term: Endpoint device
+  definition: A computer, laptop, tablet or phone that people use to connect to a system.
+  aliases: [endpoint devices]
+
 - term: Enrolment
   definition: Being added to a course by your organisation's admin, which gives you access to it.
-  aliases: [enrolments, enrolled]
+  aliases: [enrolments, enrolled, enrol, enrols]
   scope: [/deliver]
+
+- term: FAQ
+  definition: Short for frequently asked questions. You'll find them on the Technical Questions page.
+  aliases: [FAQs]
+  scope: [/deliver]
+
+- term: Foundation model
+  definition: A large AI model trained on broad data that can be adapted for many tasks, such as the models provided by AI companies.
+  aliases: [foundation models]
+
+- term: Guardrails
+  definition: Controls that limit what an AI system can do or produce, to reduce the chance of harmful or inaccurate output.
+  scope: [/trust]
+
+- term: Human oversight
+  definition: Keeping people in control of, and accountable for, decisions supported by AI. In Shybird, every AI output is reviewed by a person before it is finalised.
+  scope: [/trust]
+
+- term: ICO
+  definition: The Information Commissioner's Office, the UK regulator for data protection. You can complain to it if you're not satisfied with how your personal data has been handled.
+
+- term: Inclusive design
+  definition: Designing products so they can be used by as many people as possible, including disabled people, from the start.
+
+- term: Infrastructure-as-code
+  definition: Setting up servers and other infrastructure from version-controlled code files, rather than by hand, so it can be rebuilt quickly and consistently.
+
+- term: International Data Transfer Agreement
+  definition: A contract approved by the ICO that protects personal data when it is sent from the UK to a country without adequacy regulations.
+  aliases: [International Data Transfer Agreements, IDTA, IDTAs]
+
+- term: Labour market intelligence
+  definition: Data about jobs, skills and employment trends, such as which skills employers are asking for.
 
 - term: Learning Assistant
   definition: An AI-enabled chat tool that answers your questions and explains course content in a way that's personalised to you.
   scope: [/deliver]
 
+- term: Learning outcome
+  definition: A statement of what a learner should know or be able to do after completing a course or qualification.
+  aliases: [learning outcomes]
+
 - term: Learning path
-  definition: The ordered list of everything in your course, showing what to complete and in what order.
+  definition: The ordered list of everything in your course, such as questionnaires, modules, tests and your certificate. It shows what to complete, in what order, and your progress.
   aliases: [learning paths]
   scope: [/deliver]
+
+- term: Learning reminders
+  definition: Nudges from Shybird Deliver, and optionally by email, when you haven't visited a course for a while. You can turn them on or off, or pause them.
+  scope: [/deliver]
+
+- term: Least privilege
+  definition: Giving people only the access they need to do their job, and no more.
+
+- term: Legitimate interests
+  definition: A legal basis for processing personal data when it is needed for a genuine purpose and doesn't override the rights of the people the data is about.
 
 - term: Lesson
   definition: A single part of a module.
   aliases: [lessons]
   scope: [/deliver]
 
+- term: Level AA
+  definition: The middle of the three WCAG conformance levels (A, AA and AAA). It is the level most organisations and public sector bodies are expected to meet.
+
+- term: Likert
+  definition: A rating-scale question where you choose an answer on a scale, such as from 'strongly disagree' to 'strongly agree'.
+  scope: [/deliver]
+
+- term: Load balancing
+  definition: Spreading traffic across several servers so that no single server is overloaded and the service keeps running if one fails.
+
 - term: Module
   definition: A section of a course, made up of lessons. Each module is one step in your learning path.
   aliases: [modules]
   scope: [/deliver]
 
+- term: Multi-availability-zone deployment
+  definition: Running a service across several physically separate data centres in a region, so it keeps working if one of them fails.
+
+- term: Multi-factor authentication
+  definition: Signing in with two or more types of proof, such as a password and a code sent to your phone.
+  aliases: [MFA]
+
 - term: Onboarding
   definition: A short set of questions you may be asked the first time you open a course. You only need to answer them once.
   scope: [/deliver]
 
+- term: Penetration testing
+  definition: An authorised, simulated attack on a system by security specialists to find weaknesses before attackers do.
+
+- term: Personal data
+  definition: Any information that relates to an identified or identifiable living person, such as a name or email address.
+
+- term: Post-implementation review
+  definition: A review after a change has been made to check whether it met its objectives, whether it caused any unexpected impacts or incidents, and what lessons can be learned.
+
+- term: Prerequisite
+  definition: A module you need to finish before the next one unlocks.
+  scope: [/deliver]
+
+- term: Privacy impact assessment
+  definition: A structured review of how a project or system uses personal data, to identify and reduce privacy risks.
+  aliases: [privacy impact assessments]
+
+- term: Privileged access
+  definition: Administrator-level access that can change systems, settings or other users' accounts, so it needs extra controls.
+
+- term: Prompt
+  definition: The instructions or text given to an AI model to tell it what to produce.
+  aliases: [prompts]
+  scope: [/trust]
+
+- term: Recovery point objective
+  definition: The maximum amount of data, measured in time, that could be lost after a disruption. Shybird's typical target is 1 hour or less.
+  aliases: [RPO]
+
+- term: Recovery time objective
+  definition: The maximum target time to restore a service after a disruption. Shybird's typical target is 8 hours or less.
+  aliases: [RTO]
+
+- term: Regression testing
+  definition: Re-testing existing features after a change to check that nothing that used to work has broken.
+
+- term: Residual risk
+  definition: The risk that remains after controls have been put in place.
+
 - term: Resource Library
   definition: Resources and learning materials from all your courses, in one place.
   scope: [/deliver]
+
+- term: Risk appetite
+  definition: The amount and type of risk an organisation is willing to accept to meet its objectives.
+
+- term: Role-based access control
+  definition: Giving people access according to their role, rather than one by one, so each role sees only what it needs.
+  aliases: [role-based access controls]
+
+- term: Rollback
+  definition: Undoing a change by returning a system to its previous working version.
+  scope: [/trust]
+
+- term: SaaS
+  definition: Short for Software as a Service. Software you use online through a subscription, rather than installing and running it yourself.
+  aliases: [Software as a Service]
+
+- term: Security by default
+  definition: Making the most secure settings the starting point, so users don't have to turn protections on themselves.
+
+- term: Security by design
+  definition: Building security into a product from the start, rather than adding it afterwards.
+
+- term: Segregation of duties
+  definition: Splitting key tasks between different people, so no one person can carry out a sensitive action alone.
+
+- term: Semantic HTML
+  definition: Web page code that describes what each part of the page is, such as a heading, list or button, so assistive technologies can interpret it correctly.
+
+- term: Shared responsibility model
+  definition: The split of security and continuity duties between the service provider and the customer. For example, the provider secures the platform and the customer manages its own user accounts, devices and integrations.
+
+- term: Sign-in page
+  definition: Your organisation's own web address for signing in to Shybird Deliver. You're given it when you're enrolled, or you can ask your admin.
+  scope: [/deliver]
+
+- term: Standard Contractual Clauses
+  definition: Contract terms approved for protecting personal data when it is sent to countries without adequacy decisions. In the UK they are used with the UK Addendum.
+  aliases: [SCCs]
+
+- term: Sub-processor
+  definition: A supplier that a data processor uses to help process personal data, such as an AI, email or hosting provider.
+  aliases: [sub-processors, subprocessor, subprocessors]
+
+- term: Tabletop exercise
+  definition: A discussion-based rehearsal where a team walks through how it would respond to a scenario, such as a major outage.
+  aliases: [tabletop exercises]
+
+- term: Technical Questions
+  definition: The page with frequently asked questions and contact details for support. Select the headphones icon in the menu to open it.
+  scope: [/deliver]
+
+- term: Tenant
+  definition: One customer organisation's separate space on a shared software platform.
+  scope: [/trust]
+
+- term: Threat intelligence
+  definition: Information about current and emerging cyber threats, used to anticipate and defend against attacks.
+
+- term: Trao
+  definition: Avencera's technology partner, which builds and operates the Shybird platform on Avencera's instructions.
+  scope: [/trust]
+
+- term: UK Addendum
+  definition: An ICO-approved addition to the Standard Contractual Clauses that makes them valid for sending personal data from the UK.
+  aliases: [UK Addendums]
+
+- term: UK GDPR
+  definition: The UK General Data Protection Regulation, the main UK law on how organisations must handle personal data.
+  aliases: [UK General Data Protection Regulation]
+
+- term: User acceptance testing
+  definition: Testing by the people who will use a change, to confirm it works for them before it is released.
+
+- term: Verification code
+  definition: A one-time code sent to your email address when you sign in. Enter it to finish signing in.
+  aliases: [verification codes]
+  scope: [/deliver]
+
+- term: WCAG
+  definition: The Web Content Accessibility Guidelines, the international standard for making websites and apps accessible to disabled people.
+  aliases: [Web Content Accessibility Guidelines]

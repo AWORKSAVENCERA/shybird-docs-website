@@ -1,9 +1,9 @@
 ---
 title: Glossary
-nav_order: 8
+nav_order: 100
 permalink: /glossary
 glossary: false
-description: Definitions of the terms used in the Shybird documentation, such as course, module, learning path and Learning Assistant, and where each one applies.
+description: Definitions of the terms used in the Shybird documentation, from courses and learning paths in Shybird Deliver to the data protection, security and AI terms on the Trust pages.
 ---
 
 This page lists the terms used across this site and what they mean. Elsewhere on the site, the first time a term appears on a page it has a dotted underline. Select it to read its definition, and press Escape to close it.
