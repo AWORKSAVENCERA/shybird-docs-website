@@ -39,7 +39,7 @@ The site is a static [Jekyll](https://jekyllrb.com/) site that uses the [Just th
 ├── version.txt            # Site version number
 ├── scripts/a11y/          # WCAG 2.2 AA checker (Node + Playwright + axe-core); excluded from the site
 ├── .githooks/commit-msg   # Enforces the commit message format
-├── .claude/               # Claude Code config: skills (run-shybird-docs, accessibility, jekyll, git) and hooks
+├── .claude/               # Claude Code config: skills (run-shybird-docs, accessibility, jekyll, seo, git) and hooks
 ├── .devcontainer/         # VS Code / Codespaces dev container (Jekyll image + Claude Code)
 └── .github/
     ├── workflows/         # CI/CD (see "Deployment" and "Accessibility")
@@ -133,6 +133,7 @@ The types are `content`, `fix`, `a11y`, `style`, `feat`, `docs`, `build`, `ci`, 
   - `run-shybird-docs`: serve the site, take screenshots, search, check links and keyboard focus.
   - `accessibility`: WCAG 2.2 AA guidance and the checker.
   - `jekyll`: site conventions.
+  - `seo`: SEO and GEO (AI assistant) guidance and an audit script (`node .claude/skills/seo/audit.mjs`).
   - `git`: branching and commit conventions.
 - **Hooks** (`.claude/settings.json`): Claude Code records each file Claude edits. Before Claude finishes a task, a Stop hook checks that:
   1. a full WCAG check has passed since the last front-end change, and
