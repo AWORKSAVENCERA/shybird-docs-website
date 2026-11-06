@@ -1,20 +1,25 @@
 # Central glossary for docs.shybird.ai.
 #
+# The /glossary page (_pages/glossary.md) is generated from this file.
+#
 # Every page loads _includes/glossary.html, which passes the terms that apply to
-# that page to assets/js/glossary.js. The script finds each term in the page's
-# main content and turns it into a button with a dotted underline. Selecting the
-# button shows the definition.
+# that page to assets/js/glossary.js. The script finds the first use of each
+# term in the page's main content and turns it into a button with a dotted
+# underline. Selecting the button shows the definition.
 #
 # Fields:
 #   term        Required. The word or phrase, as it should appear in the tooltip heading.
 #   definition  Required. Plain text, one or two short sentences.
 #   aliases     Optional. Other forms to match, such as plurals ("courses").
 #   scope       Optional. URL prefixes where the term applies, for example
-#               [/deliver] (matches /deliver and /deliver/...). Leave it out to apply the term on every page.
-#               Use it when a word has a different meaning elsewhere on the site.
+#               [/deliver] (matches /deliver and /deliver/...). Leave it
+#               out to apply the term on every page. Use it when a word
+#               has a different meaning elsewhere on the site.
 #
-# Matching ignores case and only matches whole words. Terms are not highlighted
-# inside headings, links, buttons or code.
+# Matching ignores case and only matches whole words. Only the first use on a
+# page is highlighted. Terms are not highlighted inside headings, links,
+# buttons, code, bold text or quoted text (bold and quotes name things on
+# screen, like **Start Course** or 'Course Overview').
 #
 # Keep the list in alphabetical order.
 

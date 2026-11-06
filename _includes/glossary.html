@@ -3,7 +3,10 @@
   to assets/js/glossary.js. Included from head_custom.html.
   A term with no `scope` applies everywhere; otherwise page.url must start
   with one of its scope prefixes.
+  A page with `glossary: false` in its front matter (the /glossary page
+  itself) gets no highlighting.
 {%- endcomment -%}
+{%- if page.glossary != false -%}
 {%- assign glossary_terms = "" | split: "" -%}
 {%- for entry in site.data.glossary -%}
   {%- assign in_scope = false -%}
@@ -25,3 +28,4 @@
 </script>
 <script src="{{ '/assets/js/glossary.js' | relative_url }}" defer></script>
 {%- endif %}
+{%- endif -%}

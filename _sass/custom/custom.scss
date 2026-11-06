@@ -91,6 +91,26 @@
   }
 }
 
+// The /glossary page: terms stacked above their definitions, which reads
+// better than the theme's two-column list, especially on narrow screens.
+.main-content dl.glossary-list {
+  display: block;
+
+  dt {
+    margin-top: 1rem;
+    font-weight: 700;
+    text-align: left;
+
+    &::after {
+      content: none;
+    }
+  }
+
+  dd {
+    margin: 0.25rem 0 0;
+  }
+}
+
 @media print {
   .glossary-term {
     text-decoration: none;

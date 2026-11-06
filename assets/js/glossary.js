@@ -2,9 +2,14 @@
  * Glossary terms ("toggletips").
  *
  * Reads the terms for this page from <script id="glossary-data"> (written by
- * _includes/glossary.html from _data/glossary.yml), finds them in the main
- * content and wraps each one in a <button>. Selecting the button shows the
- * definition in a single shared popup.
+ * _includes/glossary.html from _data/glossary.yml), finds the first use of
+ * each one in the main content and wraps it in a <button>. Selecting the
+ * button shows the definition in a single shared popup.
+ *
+ * Terms are not highlighted inside links, buttons, headings or code, or in
+ * names of things on screen. By this site's writing convention those are
+ * bold (**Start Course**) or in quotes ('Course Overview'). Wrap any other
+ * text in an element with data-glossary-skip to leave it alone.
  *
  * Accessibility (WCAG 2.2 AA):
  * - Native <button>, so it is reachable with Tab and works with Enter/Space (2.1.1, 4.1.2).
@@ -47,8 +52,26 @@
   var pattern = new RegExp('(^|[^\\w\\u00C0-\\u024F-])(' + forms.map(escape).join('|') + ')(?![\\w\\u00C0-\\u024F-])', 'gi');
 
   // Don't turn text inside these into buttons: interactive content can't be
-  // nested, and headings and code should stay as written.
-  var SKIP = 'h1,h2,h3,h4,h5,h6,a,button,input,select,textarea,label,summary,code,pre,kbd,samp,script,style,svg,[role="button"],.glossary-term,.glossary-tip';
+  // nested, headings and code should stay as written, and bold text names a
+  // button or menu item on screen.
+  var SKIP = 'h1,h2,h3,h4,h5,h6,a,button,input,select,textarea,label,summary,code,pre,kbd,samp,script,style,svg,strong,b,[role="button"],[role="link"],[role="menuitem"],[role="tab"],[data-glossary-skip],.glossary-term,.glossary-tip';
+
+  // Quoted text names a page or label on screen ('Course Overview').
+  // Markdown turns straight quotes into curly ones, so both are handled.
+  var QUOTED = /\u2018[^\u2019]*\u2019|\u201C[^\u201D]*\u201D|"[^"]*"/g;
+  function quotedRanges(text) {
+    var ranges = [];
+    var q;
+    QUOTED.lastIndex = 0;
+    while ((q = QUOTED.exec(text)) !== null) ranges.push([q.index, q.index + q[0].length]);
+    return ranges;
+  }
+  function inRanges(ranges, start, end) {
+    return ranges.some(function (r) { return start >= r[0] && end <= r[1]; });
+  }
+
+  // Only the first use of each term on the page is highlighted.
+  var done = new Set();
 
   var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
     acceptNode: function (node) {
@@ -69,15 +92,20 @@
     if (!pattern.test(text)) return;
     pattern.lastIndex = 0;
 
-    var frag = document.createDocumentFragment();
+    var quotes = quotedRanges(text);
+    var frag = null;
     var last = 0;
     var match;
     while ((match = pattern.exec(text)) !== null) {
       var start = match.index + match[1].length;
       var word = match[2];
+      var entry = byForm[word.toLowerCase()];
+      if (done.has(entry) || inRanges(quotes, start, start + word.length)) continue;
+      done.add(entry);
+
+      frag = frag || document.createDocumentFragment();
       if (start > last) frag.appendChild(document.createTextNode(text.slice(last, start)));
 
-      var entry = byForm[word.toLowerCase()];
       var btn = document.createElement('button');
       btn.type = 'button';
       btn.className = 'glossary-term';
@@ -90,6 +118,7 @@
 
       last = start + word.length;
     }
+    if (!frag) return;
     if (last < text.length) frag.appendChild(document.createTextNode(text.slice(last)));
     node.parentNode.replaceChild(frag, node);
   });
