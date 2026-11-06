@@ -24,4 +24,4 @@ Shybird Deliver is the online platform for your course. Your course materials, l
 6. [Change your settings](/deliver/settings) - update your profile, learning reminders and signed-in devices.
 7. [Get help](/deliver/get-help) - read the FAQs or contact support.
 
-If a word is new to you, check the [glossary](/deliver/glossary).
+Words with a dotted underline have a short definition. Select the word to read it, and press Escape to close it.

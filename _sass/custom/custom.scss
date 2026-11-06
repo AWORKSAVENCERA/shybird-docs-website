@@ -1,0 +1,102 @@
+// Site-wide custom styles. Just the Docs imports this file after the theme and
+// colour scheme, so the scheme's variables are available here.
+
+// Glossary terms and their definition popups (assets/js/glossary.js,
+// _data/glossary.yml).
+
+.glossary-term {
+  // Look like the surrounding text, not a button.
+  display: inline;
+  // Vertical padding on an inline box enlarges its hit area without changing
+  // line spacing. An inline box is about 1.3em tall, which is under 24px for
+  // small text such as tables on narrow screens, so pad it up to at least
+  // 24px tall (WCAG 2.5.8).
+  padding: max(2px, calc(12.5px - 0.65em)) 0;
+  margin: 0;
+  font: inherit;
+  line-height: inherit;
+  color: inherit;
+  text-align: inherit;
+  letter-spacing: inherit;
+  background: none;
+  border: 0;
+  border-radius: 2px;
+  cursor: help;
+  text-decoration: underline dotted;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.2em;
+  // Allow long terms to wrap like normal words.
+  white-space: normal;
+
+  &:hover,
+  &[aria-expanded="true"] {
+    text-decoration-style: solid;
+    color: $link-color;
+  }
+
+  &:focus-visible {
+    // Yellow on the dark background: well over 3:1 (WCAG 2.4.7, 1.4.11).
+    outline: 2px solid $link-color;
+    outline-offset: 2px;
+  }
+}
+
+.glossary-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  &:not(.glossary-tip--open) {
+    // Stay rendered (so the live region is registered) but take no space.
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+  }
+}
+
+.glossary-tip__bubble {
+  display: block;
+  box-sizing: border-box;
+  max-width: min(20rem, calc(100vw - 32px));
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  // Dark text on a light panel: about 14:1 (WCAG 1.4.3).
+  color: $grey-dk-300;
+  background-color: $grey-lt-000;
+  border: 1px solid $grey-lt-300;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.glossary-tip__term {
+  font-weight: 700;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .glossary-tip--open .glossary-tip__bubble {
+    animation: glossary-tip-in 120ms ease-out;
+  }
+}
+
+@keyframes glossary-tip-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media print {
+  .glossary-term {
+    text-decoration: none;
+  }
+
+  .glossary-tip {
+    display: none;
+  }
+}

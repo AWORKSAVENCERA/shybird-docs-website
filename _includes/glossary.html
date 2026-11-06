@@ -1,0 +1,27 @@
+{%- comment -%}
+  Passes the glossary terms that apply to this page (see _data/glossary.yml)
+  to assets/js/glossary.js. Included from head_custom.html.
+  A term with no `scope` applies everywhere; otherwise page.url must start
+  with one of its scope prefixes.
+{%- endcomment -%}
+{%- assign glossary_terms = "" | split: "" -%}
+{%- for entry in site.data.glossary -%}
+  {%- assign in_scope = false -%}
+  {%- if entry.scope -%}
+    {%- for prefix in entry.scope -%}
+      {%- assign head = page.url | slice: 0, prefix.size -%}
+      {%- if head == prefix -%}{%- assign in_scope = true -%}{%- endif -%}
+    {%- endfor -%}
+  {%- else -%}
+    {%- assign in_scope = true -%}
+  {%- endif -%}
+  {%- if in_scope -%}{%- assign glossary_terms = glossary_terms | push: entry -%}{%- endif -%}
+{%- endfor -%}
+{%- if glossary_terms.size > 0 %}
+<script type="application/json" id="glossary-data">
+[{%- for entry in glossary_terms -%}
+{"term":{{ entry.term | jsonify }},"definition":{{ entry.definition | jsonify }},"aliases":{% if entry.aliases %}{{ entry.aliases | jsonify }}{% else %}[]{% endif %}}{% unless forloop.last %},{% endunless %}
+{%- endfor -%}]
+</script>
+<script src="{{ '/assets/js/glossary.js' | relative_url }}" defer></script>
+{%- endif %}

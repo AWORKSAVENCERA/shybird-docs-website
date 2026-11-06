@@ -1,0 +1,61 @@
+# Central glossary for docs.shybird.ai.
+#
+# Every page loads _includes/glossary.html, which passes the terms that apply to
+# that page to assets/js/glossary.js. The script finds each term in the page's
+# main content and turns it into a button with a dotted underline. Selecting the
+# button shows the definition.
+#
+# Fields:
+#   term        Required. The word or phrase, as it should appear in the tooltip heading.
+#   definition  Required. Plain text, one or two short sentences.
+#   aliases     Optional. Other forms to match, such as plurals ("courses").
+#   scope       Optional. URL prefixes where the term applies, for example
+#               [/deliver] (matches /deliver and /deliver/...). Leave it out to apply the term on every page.
+#               Use it when a word has a different meaning elsewhere on the site.
+#
+# Matching ignores case and only matches whole words. Terms are not highlighted
+# inside headings, links, buttons or code.
+#
+# Keep the list in alphabetical order.
+
+- term: Certificate
+  definition: Your proof that you've completed a course. You can download it once you've finished everything in your learning path.
+  aliases: [certificates]
+  scope: [/deliver]
+
+- term: Course
+  definition: A complete learning programme that you're enrolled on, made up of modules.
+  aliases: [courses]
+  scope: [/deliver]
+
+- term: Enrolment
+  definition: Being added to a course by your organisation's admin, which gives you access to it.
+  aliases: [enrolments, enrolled]
+  scope: [/deliver]
+
+- term: Learning Assistant
+  definition: An AI-enabled chat tool that answers your questions and explains course content in a way that's personalised to you.
+  scope: [/deliver]
+
+- term: Learning path
+  definition: The ordered list of everything in your course, showing what to complete and in what order.
+  aliases: [learning paths]
+  scope: [/deliver]
+
+- term: Lesson
+  definition: A single part of a module.
+  aliases: [lessons]
+  scope: [/deliver]
+
+- term: Module
+  definition: A section of a course, made up of lessons. Each module is one step in your learning path.
+  aliases: [modules]
+  scope: [/deliver]
+
+- term: Onboarding
+  definition: A short set of questions you may be asked the first time you open a course. You only need to answer them once.
+  scope: [/deliver]
+
+- term: Resource Library
+  definition: Resources and learning materials from all your courses, in one place.
+  scope: [/deliver]
