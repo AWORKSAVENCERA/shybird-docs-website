@@ -1,0 +1,37 @@
+# LLM Feed for https://docs.shybird.ai
+_Generated: Fri, 06 Nov 2026 10:19:36 +0000_
+ 
+ 
+## All pages
+- [Page not found](/404.html)
+- [Accessibility](/trust/accessibility)
+- [Business continuity and disaster recovery](/trust/business-continuity)
+- [Data protection and privacy](/trust/privacy)
+- [Getting started with Shybird Define](/define/getting-started)
+- [Getting started with the Admin Centre](/admin/getting-started)
+- [Getting started with Shybird Deliver](/deliver/getting-started)
+- [Getting started with Shybird Design](/design/getting-started)
+- [Governance](/trust/governance)
+- [Define](/define)
+- [Client administration](/admin)
+- [Trust](/trust)
+- [Deliver](/deliver)
+- [Design](/design)
+- [Home](/)
+- [LLMS.txt](/llms.txt)
+- [Privacy](/trust/privacy)
+- [Release notes](/release-notes)
+- [Responsible AI](/trust/responsible-ai)
+- [Security](/trust/security)
+
+- [Status](/trust/status)
+
+
+
+
+
+
+
+
+
+## All posts 

@@ -1,0 +1,989 @@
+{"0": {
+    "doc": "Page not found",
+    "title": "404",
+    "content": "Page not found :( . The requested page could not be found. ",
+    "url": "/404.html",
+    
+    "relUrl": "/404.html"
+  },"1": {
+    "doc": "Page not found",
+    "title": "Page not found",
+    "content": " ",
+    "url": "/404.html",
+    
+    "relUrl": "/404.html"
+  },"2": {
+    "doc": "Accessibility",
+    "title": "Commitment to accessibility",
+    "content": "We are committed to making our products and services accessible to all users, including people with disabilities. Our objective is to design, develop and maintain our products in accordance with the principles of inclusive design and the requirements of the Web Content Accessibility Guidelines (WCAG) 2.2 Level AA. Accessibility is considered throughout our product lifecycle, including design, development, testing, deployment and ongoing improvement activities. ",
+    "url": "/trust/accessibility#commitment-to-accessibility",
+    
+    "relUrl": "/trust/accessibility#commitment-to-accessibility"
+  },"3": {
+    "doc": "Accessibility",
+    "title": "Accessibility standards",
+    "content": "We aim to conform with: . | Web Content Accessibility Guidelines (WCAG) 2.2 Level AA | Applicable accessibility legislation and regulations in the jurisdictions in which our services are provided | Relevant industry best practices for accessible digital services | . ",
+    "url": "/trust/accessibility#accessibility-standards",
+    
+    "relUrl": "/trust/accessibility#accessibility-standards"
+  },"4": {
+    "doc": "Accessibility",
+    "title": "Measures we take",
+    "content": "To support accessibility, we: . | Incorporate accessibility requirements into product design and development processes | Apply semantic HTML and accessible user interface patterns | Support keyboard-only navigation wherever functionality is available | Ensure sufficient colour contrast and text readability | Provide appropriate alternative text for meaningful images | Ensure forms are labelled and accessible to assistive technologies | Test compatibility with commonly used assistive technologies and modern browsers | Conduct accessibility reviews during product development and release cycles | Provide accessibility awareness and training for relevant personnel | . ",
+    "url": "/trust/accessibility#measures-we-take",
+    
+    "relUrl": "/trust/accessibility#measures-we-take"
+  },"5": {
+    "doc": "Accessibility",
+    "title": "Conformance status",
+    "content": "We are working towards full conformance with WCAG 2.2 Level AA. Accessibility assessments are performed periodically using a combination of: . | Automated accessibility testing tools | Manual accessibility reviews | Keyboard navigation testing | Assistive technology testing, where appropriate | . Any issues identified are prioritised and addressed through our normal product development and continuous improvement processes. ",
+    "url": "/trust/accessibility#conformance-status",
+    
+    "relUrl": "/trust/accessibility#conformance-status"
+  },"6": {
+    "doc": "Accessibility",
+    "title": "Known limitations",
+    "content": "While we strive for full accessibility, some areas of the service may not yet achieve complete WCAG 2.2 Level AA conformance. Examples may include: . | Third-party content or integrations that are outside our direct control | Legacy functionality awaiting redesign or enhancement | Newly released features undergoing accessibility verification | . Where limitations are identified, we aim to provide reasonable alternatives and remediation plans. ",
+    "url": "/trust/accessibility#known-limitations",
+    
+    "relUrl": "/trust/accessibility#known-limitations"
+  },"7": {
+    "doc": "Accessibility",
+    "title": "Requesting accessible alternatives",
+    "content": "If you experience difficulty accessing any content, feature or functionality, or if you require information in an alternative format, please contact us. When contacting us, please provide: . | The page or feature you were using | A description of the issue encountered | Any assistive technology being used (if relevant) | Your preferred format for any requested information | . We will make reasonable efforts to provide the information or service in an accessible format. ",
+    "url": "/trust/accessibility#requesting-accessible-alternatives",
+    
+    "relUrl": "/trust/accessibility#requesting-accessible-alternatives"
+  },"8": {
+    "doc": "Accessibility",
+    "title": "Feedback and reporting issues",
+    "content": "We welcome feedback on the accessibility of our website and SaaS platform. You can report accessibility issues, request assistance, or suggest improvements using the contact details below: . Email: accessibility@[company-domain] Support Portal: [support URL] Postal Address: [company address] . We aim to acknowledge accessibility-related enquiries within five business days and to provide a substantive response as quickly as reasonably practicable. ",
+    "url": "/trust/accessibility#feedback-and-reporting-issues",
+    
+    "relUrl": "/trust/accessibility#feedback-and-reporting-issues"
+  },"9": {
+    "doc": "Accessibility",
+    "title": "Continuous improvement",
+    "content": "Accessibility is an ongoing commitment rather than a one-time activity. We regularly review: . | Accessibility testing results | User feedback | Changes to accessibility standards | Product roadmap initiatives | Emerging assistive technology requirements | . Findings from these reviews inform our prioritisation and continuous improvement activities. ",
+    "url": "/trust/accessibility#continuous-improvement",
+    
+    "relUrl": "/trust/accessibility#continuous-improvement"
+  },"10": {
+    "doc": "Accessibility",
+    "title": "Preparation of this statement",
+    "content": "This statement applies to: . | This documentation website | The Shybird applications and associated user interfaces | . This statement was last reviewed on: [Date] . ",
+    "url": "/trust/accessibility#preparation-of-this-statement",
+    
+    "relUrl": "/trust/accessibility#preparation-of-this-statement"
+  },"11": {
+    "doc": "Accessibility",
+    "title": "Accessibility",
+    "content": " ",
+    "url": "/trust/accessibility",
+    
+    "relUrl": "/trust/accessibility"
+  },"12": {
+    "doc": "Business continuity and disaster recovery",
+    "title": "Purpose",
+    "content": "This document provides an overview of our business continuity and disaster recovery (BCDR) capabilities for customers, partners and prospective purchasers. The objective of our BCDR programme is to minimise the impact of operational disruptions and to support the continued delivery and recovery of services in accordance with defined business priorities. This overview is intended for information purposes and does not form part of any contractual commitment unless explicitly stated within customer agreements. ",
+    "url": "/trust/business-continuity#purpose",
+    
+    "relUrl": "/trust/business-continuity#purpose"
+  },"13": {
+    "doc": "Business continuity and disaster recovery",
+    "title": "Scope",
+    "content": "This document applies to: . | Production SaaS services | Supporting cloud infrastructure | Customer data processing environments | Service management and support functions | Internal business operations required to deliver the service | . ",
+    "url": "/trust/business-continuity#scope",
+    
+    "relUrl": "/trust/business-continuity#scope"
+  },"14": {
+    "doc": "Business continuity and disaster recovery",
+    "title": "Governance",
+    "content": "Business continuity and disaster recovery activities are managed within our wider risk management and operational governance framework. Key governance activities include: . | Identification and assessment of business continuity risks | Definition of recovery objectives | Maintenance of continuity and recovery plans | Regular plan review and testing | Management reporting and oversight | Continuous improvement activities | . ",
+    "url": "/trust/business-continuity#governance",
+    
+    "relUrl": "/trust/business-continuity#governance"
+  },"15": {
+    "doc": "Business continuity and disaster recovery",
+    "title": "Business continuity strategy",
+    "content": "Our business continuity strategy is designed to ensure that critical services can continue, or can be restored within agreed recovery targets, following a disruptive event. The strategy addresses scenarios including: . | Cloud service outages | Infrastructure failures | Cybersecurity incidents | Network disruptions | Loss of supplier services | Loss of facilities | Workforce disruption | Major environmental events | . ",
+    "url": "/trust/business-continuity#business-continuity-strategy",
+    
+    "relUrl": "/trust/business-continuity#business-continuity-strategy"
+  },"16": {
+    "doc": "Business continuity and disaster recovery",
+    "title": "Disaster recovery strategy",
+    "content": "Disaster recovery procedures are maintained for systems supporting the delivery of the SaaS platform. Recovery arrangements may include: . | Recovery from backups | Infrastructure redeployment | Restoration of application services | Database recovery processes | Service validation and testing | Controlled return to normal operations | . Recovery procedures are documented and reviewed periodically. ",
+    "url": "/trust/business-continuity#disaster-recovery-strategy",
+    
+    "relUrl": "/trust/business-continuity#disaster-recovery-strategy"
+  },"17": {
+    "doc": "Business continuity and disaster recovery",
+    "title": "Recovery objectives",
+    "content": "Recovery objectives are established according to service criticality and risk assessment. Typical service targets are shown below. | Objective | Target | . | Recovery time objective (RTO) | ≤ 8 hours | . | Recovery point objective (RPO) | ≤ 1 hour | . | Service availability target | 99.9% monthly uptime | . | Critical incident response | Immediate triage and escalation | . Actual recovery targets may vary depending on the service component and contractual commitments. ",
+    "url": "/trust/business-continuity#recovery-objectives",
+    
+    "relUrl": "/trust/business-continuity#recovery-objectives"
+  },"18": {
+    "doc": "Business continuity and disaster recovery",
+    "title": "Data backup and recovery",
+    "content": "Customer data is protected through backup and recovery processes designed to support operational resilience. Backup controls include: . | Automated backups | Encrypted backup storage | Retention policies | Monitoring of backup operations | Periodic restoration testing | . Backup schedules are designed to support recovery objectives and business requirements. ",
+    "url": "/trust/business-continuity#data-backup-and-recovery",
+    
+    "relUrl": "/trust/business-continuity#data-backup-and-recovery"
+  },"19": {
+    "doc": "Business continuity and disaster recovery",
+    "title": "Cloud infrastructure resilience",
+    "content": "The SaaS platform is hosted within cloud infrastructure designed to provide resilience against component failure. Resilience measures may include: . | Redundant infrastructure components | Multi-availability-zone deployment | Load balancing | Automated monitoring and alerting | Infrastructure-as-code deployment practices | Capacity management and scaling controls | . Specific architectural details are not publicly disclosed for security reasons. ",
+    "url": "/trust/business-continuity#cloud-infrastructure-resilience",
+    
+    "relUrl": "/trust/business-continuity#cloud-infrastructure-resilience"
+  },"20": {
+    "doc": "Business continuity and disaster recovery",
+    "title": "Cyber incident resilience",
+    "content": "Business continuity and disaster recovery arrangements are integrated with incident response processes. In the event of a significant cybersecurity incident, established procedures support: . | Incident containment | Investigation and analysis | Service recovery | Customer communications | Regulatory reporting where required | Post-incident corrective actions | . ",
+    "url": "/trust/business-continuity#cyber-incident-resilience",
+    
+    "relUrl": "/trust/business-continuity#cyber-incident-resilience"
+  },"21": {
+    "doc": "Business continuity and disaster recovery",
+    "title": "Supplier dependency management",
+    "content": "The delivery of our services may depend upon a number of carefully selected suppliers and service providers. Supplier resilience is considered through: . | Supplier due diligence | Contractual controls | Service level monitoring | Risk assessments | Business continuity reviews | . Dependencies on critical suppliers are considered within continuity planning activities. ",
+    "url": "/trust/business-continuity#supplier-dependency-management",
+    
+    "relUrl": "/trust/business-continuity#supplier-dependency-management"
+  },"22": {
+    "doc": "Business continuity and disaster recovery",
+    "title": "Incident management and communications",
+    "content": "A formal incident management process is maintained to support service restoration and customer communications. The process includes: . | Incident classification | Escalation procedures | Technical response coordination | Executive oversight for major incidents | Customer notification and updates | Post-incident review | . Customers may receive updates through: . | Service status pages | Email notifications | Customer support channels | Designated account contacts | . ",
+    "url": "/trust/business-continuity#incident-management-and-communications",
+    
+    "relUrl": "/trust/business-continuity#incident-management-and-communications"
+  },"23": {
+    "doc": "Business continuity and disaster recovery",
+    "title": "Testing and exercising",
+    "content": "Business continuity and disaster recovery plans are tested on a regular basis. Testing activities may include: . | Documentation review | Tabletop exercises | Disaster recovery simulations | Backup restoration testing | Incident response exercises | Technical recovery validation | . Issues identified during testing are tracked and addressed through continual improvement activities. ",
+    "url": "/trust/business-continuity#testing-and-exercising",
+    
+    "relUrl": "/trust/business-continuity#testing-and-exercising"
+  },"24": {
+    "doc": "Business continuity and disaster recovery",
+    "title": "Continuous improvement",
+    "content": "The business continuity and disaster recovery programme is subject to ongoing review. Inputs to continuous improvement include: . | Audit findings | Incident reviews | Risk assessments | Customer feedback | Technology changes | Regulatory developments | Testing outcomes | . Updates are incorporated into plans, procedures and controls as appropriate. ",
+    "url": "/trust/business-continuity#continuous-improvement",
+    
+    "relUrl": "/trust/business-continuity#continuous-improvement"
+  },"25": {
+    "doc": "Business continuity and disaster recovery",
+    "title": "Customer responsibilities",
+    "content": "Customers are encouraged to maintain their own business continuity arrangements. Customer responsibilities may include: . | Managing user access and authentication | Maintaining local copies of exported data where required | Defining internal operational procedures | Establishing continuity arrangements for customer-managed integrations | Training users on contingency procedures | . Business continuity is a shared responsibility between the service provider and the customer. ",
+    "url": "/trust/business-continuity#customer-responsibilities",
+    
+    "relUrl": "/trust/business-continuity#customer-responsibilities"
+  },"26": {
+    "doc": "Business continuity and disaster recovery",
+    "title": "Additional assurance information",
+    "content": "Additional information may be provided under appropriate confidentiality arrangements, including: . | Detailed recovery architecture | Security controls | Test summaries | Independent assurance reports | Compliance certifications | Supplier assurance documentation | . ",
+    "url": "/trust/business-continuity#additional-assurance-information",
+    
+    "relUrl": "/trust/business-continuity#additional-assurance-information"
+  },"27": {
+    "doc": "Business continuity and disaster recovery",
+    "title": "Review of this document",
+    "content": "Last reviewed: [Date] . Next review due: [Date] . ",
+    "url": "/trust/business-continuity#review-of-this-document",
+    
+    "relUrl": "/trust/business-continuity#review-of-this-document"
+  },"28": {
+    "doc": "Business continuity and disaster recovery",
+    "title": "Business continuity and disaster recovery",
+    "content": " ",
+    "url": "/trust/business-continuity",
+    
+    "relUrl": "/trust/business-continuity"
+  },"29": {
+    "doc": "Data protection and privacy",
+    "title": "Purpose",
+    "content": "This document explains how we protect, manage, retain and dispose of information processed through our Shybird suite of products. We are committed to handling personal data lawfully, fairly and transparently, and to complying with applicable data protection legislation, including the UK General Data Protection Regulation (UK GDPR) and the Data Protection Act 2018. This statement is intended for customers, users and prospective customers undertaking procurement, due diligence or assurance activities. ",
+    "url": "/trust/privacy#purpose",
+    
+    "relUrl": "/trust/privacy#purpose"
+  },"30": {
+    "doc": "Data protection and privacy",
+    "title": "Data protection principles",
+    "content": "We process personal data in accordance with the following principles: . | Lawfulness, fairness and transparency | Purpose limitation | Data minimisation | Accuracy | Storage limitation | Integrity and confidentiality | Accountability | . These principles are incorporated into our governance, product design and operational processes. ",
+    "url": "/trust/privacy#data-protection-principles",
+    
+    "relUrl": "/trust/privacy#data-protection-principles"
+  },"31": {
+    "doc": "Data protection and privacy",
+    "title": "Data controller and processor roles",
+    "content": "The role we perform depends on the nature of the information being processed. Customer content . For customer content uploaded to or created within Shybird, including qualification materials, course content and any personal data contained within those materials, the customer organisation is normally the data controller. Avencera Ltd acts as a data processor and processes such information only on the documented instructions of the customer. Our suppliers and development parters acts as sub-processors to Avencera in operating the platform. Service administration data . For information required to operate, secure, support and administer the service, such as user accounts, billing information, support requests and security logs, Avencera Ltd acts as the data controller. In these circumstances, Avencera determines the purposes and means of processing and is responsible for meeting the associated data protection obligations. ",
+    "url": "/trust/privacy#data-controller-and-processor-roles",
+    
+    "relUrl": "/trust/privacy#data-controller-and-processor-roles"
+  },"32": {
+    "doc": "Data protection and privacy",
+    "title": "What information we process",
+    "content": "The platform enables users to upload source materials from which qualifications, courses, learning outcomes and assessment content may be generated. Examples of information processed may include: . | Course specifications | Qualification documentation | Learning materials | Assessment materials | User account information | Support and operational records | System usage information | . Personal data within uploaded materials . Source materials may occasionally contain personal data, such as: . | Names of authors | Names of contributors | Details contained within case studies | Contact information included within source documentation | . We do not require personal data to be included in source materials and encourage customers to avoid including unnecessary personal information wherever possible. Where personal data is present, we process only the information necessary to provide the service. ",
+    "url": "/trust/privacy#what-information-we-process",
+    
+    "relUrl": "/trust/privacy#what-information-we-process"
+  },"33": {
+    "doc": "Data protection and privacy",
+    "title": "Why we process information",
+    "content": "We process information for purposes including: . | Provision of the platform and associated services | Generation of qualification and learning content | User authentication and account management | Customer support | Security monitoring and incident management | Service improvement | Compliance with legal obligations | Business continuity and disaster recovery activities | . We do not use customer content for marketing purposes. ",
+    "url": "/trust/privacy#why-we-process-information",
+    
+    "relUrl": "/trust/privacy#why-we-process-information"
+  },"34": {
+    "doc": "Data protection and privacy",
+    "title": "Legal bases for processing",
+    "content": "Depending on the circumstances, we may rely on one or more legal bases for processing personal data, including: . | Performance of a contract | Legitimate interests | Compliance with legal obligations | Consent where required by law | . The specific legal basis will depend on the nature of the processing activity. ",
+    "url": "/trust/privacy#legal-bases-for-processing",
+    
+    "relUrl": "/trust/privacy#legal-bases-for-processing"
+  },"35": {
+    "doc": "Data protection and privacy",
+    "title": "Privacy by design and default",
+    "content": "Privacy considerations are incorporated into the design and operation of our services. Our approach includes: . | Data minimisation | Role-based access controls | Secure system design | Encryption and security controls | Retention and disposal controls | Audit and accountability measures | Risk assessment activities | . Privacy and security requirements are considered throughout the product lifecycle. ",
+    "url": "/trust/privacy#privacy-by-design-and-default",
+    
+    "relUrl": "/trust/privacy#privacy-by-design-and-default"
+  },"36": {
+    "doc": "Data protection and privacy",
+    "title": "Artificial intelligence processing",
+    "content": "Shybird uses artificial intelligence technologies to assist users in analysing source materials and generating learning and assessment content. AI-generated outputs are intended to support user activities and are not automatically published or deployed without human review. Every output is reviewed by a person before it is finalised. Further information regarding our approach to AI governance is available within our Responsible Use of Artificial Intelligence Statement. ",
+    "url": "/trust/privacy#artificial-intelligence-processing",
+    
+    "relUrl": "/trust/privacy#artificial-intelligence-processing"
+  },"37": {
+    "doc": "Data protection and privacy",
+    "title": "Sub-processors and third-party service providers",
+    "content": "We use carefully selected suppliers to support the operation of the platform. | Organisation | Role | Purpose | . | Trao | Data processor | Platform development and operations | . | Anthropic | Sub-processor | Primary AI processing services | . | OpenAI | Sub-processor | Specific AI-enabled functionality | . | Resend | Sub-processor | Email delivery services | . | DigitalOcean | Sub-processor | Cloud hosting infrastructure | . | Qdrant Cloud | Sub-processor | Search and retrieval services | . | Firecrawl | Sub-processor | Search and research functionality | . | Tavily | Sub-processor | Search and research functionality | . | Lightcast | Sub-processor | Labour market intelligence services | . | O*NET | Sub-processor | Occupational information services | . Appropriate contractual and technical safeguards are implemented for suppliers that process personal data on our behalf. ",
+    "url": "/trust/privacy#sub-processors-and-third-party-service-providers",
+    
+    "relUrl": "/trust/privacy#sub-processors-and-third-party-service-providers"
+  },"38": {
+    "doc": "Data protection and privacy",
+    "title": "AI model transparency",
+    "content": "Anthropic is currently the primary AI provider used within Shybird. During platform development, various models and providers may be evaluated as part of technical assessments and product research. For example, DeepSeek was reviewed during development and was not adopted for production use. DeepSeek has not processed production customer data or customer information. We believe transparency regarding significant AI technology decisions helps customers make informed decisions about the services they use. ",
+    "url": "/trust/privacy#ai-model-transparency",
+    
+    "relUrl": "/trust/privacy#ai-model-transparency"
+  },"39": {
+    "doc": "Data protection and privacy",
+    "title": "International transfers",
+    "content": "Customer content and generated outputs are primarily stored within the United Kingdom. Some processing activities may involve service providers located outside the United Kingdom. Where personal data is transferred internationally, we implement appropriate safeguards, which may include: . | International Data Transfer Agreements (IDTAs) | UK Addendums to Standard Contractual Clauses | Adequacy regulations where applicable | Contractual and organisational safeguards | . Further information is available on request. ",
+    "url": "/trust/privacy#international-transfers",
+    
+    "relUrl": "/trust/privacy#international-transfers"
+  },"40": {
+    "doc": "Data protection and privacy",
+    "title": "Information security",
+    "content": "We maintain technical and organisational measures designed to protect personal data against accidental or unlawful destruction, loss, alteration, unauthorised disclosure or unauthorised access. Controls may include: . | Encryption in transit | Encryption at rest | Role-based access controls | Multi-factor authentication | Security monitoring | Vulnerability management | Incident management procedures | Secure software development practices | . Further information is available within our Information Security Overview. ",
+    "url": "/trust/privacy#information-security",
+    
+    "relUrl": "/trust/privacy#information-security"
+  },"41": {
+    "doc": "Data protection and privacy",
+    "title": "Retention of information",
+    "content": "We retain information only for as long as necessary to fulfil the purposes for which it was collected and to meet legal, regulatory and contractual obligations. Customer content . Customer content remains available while the customer maintains an active account and continues to use the service. Deleted content . Where content is deleted by a customer, the content enters a controlled holding period for recovery and operational resilience purposes. Deleted content is normally retained for up to 90 days before permanent disposal. Account closure . Where an account is terminated or a customer relationship ends: . | Access to the service is removed | Customer content enters the retention period | Data is subsequently disposed of according to documented disposal procedures | Remaining legal or contractual retention requirements are applied where necessary | . Operational records . Certain operational, audit, security and financial records may be retained for longer periods where required for: . | Legal obligations | Regulatory compliance | Security investigations | Accounting and taxation requirements | Dispute resolution | . ",
+    "url": "/trust/privacy#retention-of-information",
+    
+    "relUrl": "/trust/privacy#retention-of-information"
+  },"42": {
+    "doc": "Data protection and privacy",
+    "title": "Data disposal and destruction",
+    "content": "We maintain procedures to ensure information is securely disposed of when retention periods expire. Disposal methods may include: . | Permanent deletion | Cryptographic erasure | Secure destruction of backups according to retention schedules | Anonymisation where continued statistical or analytical use is required | . Disposal activities are designed to prevent the unauthorised recovery or reconstruction of information. ",
+    "url": "/trust/privacy#data-disposal-and-destruction",
+    
+    "relUrl": "/trust/privacy#data-disposal-and-destruction"
+  },"43": {
+    "doc": "Data protection and privacy",
+    "title": "Data subject rights",
+    "content": "Individuals may have rights under applicable data protection legislation, including the right to: . | Access personal data | Correct inaccurate information | Request deletion of personal data | Restrict processing | Object to processing | Receive personal data in a portable format | Withdraw consent where consent is the legal basis for processing | . Requests are assessed and responded to in accordance with applicable legal requirements. We aim to respond to valid requests within one calendar month. ",
+    "url": "/trust/privacy#data-subject-rights",
+    
+    "relUrl": "/trust/privacy#data-subject-rights"
+  },"44": {
+    "doc": "Data protection and privacy",
+    "title": "Complaints",
+    "content": "If you have concerns regarding the handling of your personal data, we encourage you to contact us first so that we can investigate and resolve the matter. Individuals also have the right to raise concerns with the Information Commissioner’s Office (ICO). Website: https://ico.org.uk . ",
+    "url": "/trust/privacy#complaints",
+    
+    "relUrl": "/trust/privacy#complaints"
+  },"45": {
+    "doc": "Data protection and privacy",
+    "title": "Contact information",
+    "content": "For privacy, data protection or information governance enquiries, please contact: . Email: pmo@avencera.ai . ",
+    "url": "/trust/privacy#contact-information",
+    
+    "relUrl": "/trust/privacy#contact-information"
+  },"46": {
+    "doc": "Data protection and privacy",
+    "title": "Continuous improvement",
+    "content": "We review our privacy, retention and disposal practices regularly as part of our governance, compliance and risk management processes. Reviews may take account of: . | Legislative changes | Regulatory guidance | Customer feedback | Security incidents | Audit findings | Changes to products and services | . ",
+    "url": "/trust/privacy#continuous-improvement",
+    
+    "relUrl": "/trust/privacy#continuous-improvement"
+  },"47": {
+    "doc": "Data protection and privacy",
+    "title": "Review of this document",
+    "content": "Last reviewed: [Date] . Next review due: [Date] . ",
+    "url": "/trust/privacy#review-of-this-document",
+    
+    "relUrl": "/trust/privacy#review-of-this-document"
+  },"48": {
+    "doc": "Data protection and privacy",
+    "title": "Data protection and privacy",
+    "content": " ",
+    "url": "/trust/privacy",
+    
+    "relUrl": "/trust/privacy"
+  },"49": {
+    "doc": "Getting started with Shybird Define",
+    "title": "Getting started with Shybird Define",
+    "content": " ",
+    "url": "/define/getting-started",
+    
+    "relUrl": "/define/getting-started"
+  },"50": {
+    "doc": "Getting started with the Admin Centre",
+    "title": "Getting started with the Admin Centre",
+    "content": " ",
+    "url": "/admin/getting-started",
+    
+    "relUrl": "/admin/getting-started"
+  },"51": {
+    "doc": "Getting started with Shybird Deliver",
+    "title": "In this guide",
+    "content": ". | Getting started | Sign in | Finding your way around | Logging out | Settings | Accessing your course | Moving through your course | Getting help | Access after your course ends | . ",
+    "url": "/deliver/getting-started#in-this-guide",
+    
+    "relUrl": "/deliver/getting-started#in-this-guide"
+  },"52": {
+    "doc": "Getting started with Shybird Deliver",
+    "title": "Getting started",
+    "content": "Shybird Deliver is the online platform for your course(s). It gives you access to everything you need for your studies in one place. Shybird Deliver is available 24 hours a day, 7 days a week, and you can access it from a web browser on a computer, tablet or phone. You will gain access to your course once you are fully enrolled. ",
+    "url": "/deliver/getting-started#getting-started",
+    
+    "relUrl": "/deliver/getting-started#getting-started"
+  },"53": {
+    "doc": "Getting started with Shybird Deliver",
+    "title": "Sign in",
+    "content": "Signing in after enrolment . Users will first have to be enrolled by the organisation’s admin onto a course to receive the URL for sign in. Enrolled users will receive an invitation from no-reply@avencera.ai with a ‘Activate Your Account’ email. Press the ‘Activate Your Account’ button embedded within this email to be taken to the sign up page. After activating your account, to log in, go to the Shybird Deliver login page using the URL below. Enter the email address that you used for enrolment, and press sign in. You will then be asked to enter a one-time verification code, which will have been sent to your email. Enter this code then enter. Users can also use the ‘Sign In with Google’ or ‘Sign in with Microsoft’ buttons to be redirected to separate login processes. You can access Shybird Deliver on the go from the web browser on your phone or tablet, so you can keep up with your course wherever you are. The layout adjusts to fit smaller screens. Users can sign in here: Avencera LMS - Participant Login . If you can’t log in . Check that you are using the correct email address and that your account has been activated – attempting to use the original enrolment email from no-reply@avencera.ai will take you to an ‘Invitation Used’ page if your account has been activated. Following this, check your internet connection is still working on another separate site. If you still can’t sign in, consult your organisations admin or helpdesk. ",
+    "url": "/deliver/getting-started#sign-in",
+    
+    "relUrl": "/deliver/getting-started#sign-in"
+  },"54": {
+    "doc": "Getting started with Shybird Deliver",
+    "title": "Finding your way around",
+    "content": "Multiple functions exist within Deliver, all listed on the left hand side of your screen. Below lists the functions available and the purpose of each. Courses . When you log in, you’ll land on your ’Course Overview’ — your personal home page that allows you to access the courses you’re enrolled on, or view other courses you may wish to register interest on. Events . Click on ‘Events’ to view and manage the events you are signed up to. If you are not signed up to any events, ‘No events available’ will appear on your screen. Resource Library . Click on ‘Resource Library’ to access resources and learning materials across your courses. If your enrolled courses do not have an resources associated with it, ‘No resources available’ will appear on your screen. Content Questions . Click on ‘Content Questions’ to access your AI enabled learning assistant. Use the provided chat function to ask the Learning Assistant questions about your learnings. Technical Questions . Click on ‘Technical Questions’ to access FAQs or get in touch with support. Notifications . Click on ‘Notifications’ to see updates about courses and activities. You can filter for all or unread notifications in the top left corner. Settings . See the dedicated ‘Settings’ section below. Dark Mode . Press the slider here to switch between Dark and Light mode. ",
+    "url": "/deliver/getting-started#finding-your-way-around",
+    
+    "relUrl": "/deliver/getting-started#finding-your-way-around"
+  },"55": {
+    "doc": "Getting started with Shybird Deliver",
+    "title": "Logging out",
+    "content": "To log out of the system, click the sign out icon to securely log out of your account. You will need to sign in again to access the application. ",
+    "url": "/deliver/getting-started#logging-out",
+    
+    "relUrl": "/deliver/getting-started#logging-out"
+  },"56": {
+    "doc": "Getting started with Shybird Deliver",
+    "title": "Settings",
+    "content": "The Settings area is opened from ‘Settings’ in the menu on the left. Profile &amp; security . The ‘Profile and Security’ section lets you manage your personal details, choose how we remind you about your learning, and see the devices you’re signed in on. Your profile details . Your personal details are shown on the right of the ‘Profile and Security’ panel. You can edit your full name, email address, department, job title, organisation name and sector. Make your changes, then click ‘Save Changes’ to update your profile. Profile photo . Your profile photo appears on the left of the panel. Click ‘Change Photo’ to upload a new image, or ‘Remove Photo’ to delete your current one. Learning reminders . Under ‘Learning Reminders’, you can choose how Shybird Deliver reminds you about courses in progress: . | Reminders – get a nudge when you haven’t visited a course in a while. Use the toggle to turn this on or off. | Email reminders – also receive reminders by email, not just in the app. Use the toggle to turn this on or off. | Pause reminders – take a break without turning reminders off for good. Choose ‘Pause 2 weeks’, ‘Pause 1 month’ or ‘Pause 3 months’. | . Active sessions . Under ‘Active Sessions’, you can see the devices where you’re currently logged in and when each was last active. To sign out of a device, click ‘End Session’ next to it — this is useful if you’ve signed in on a shared or public computer. ",
+    "url": "/deliver/getting-started#settings-1",
+    
+    "relUrl": "/deliver/getting-started#settings-1"
+  },"57": {
+    "doc": "Getting started with Shybird Deliver",
+    "title": "Accessing your course",
+    "content": "Finding enrolled courses . Your courses are shown on the ‘Course Overview’ page. To narrow down what’s displayed, select the ‘All Courses’ dropdown in the top right of the screen. This will allow you to filter for courses that have been ‘Assigned’ to you. Each enrolled course has a ‘Start Course’ button — select it to open the course. Inside a course . Course content is organised into sections (for example, by week or by module). Each section brings together the learning materials, activities and links you need. You can move between them using the navigation menu. Onboarding . When you open your course for the first time, you may be asked some onboarding questions. These can vary between courses. You will only need to answer them once.. Learning path . When you select ‘Start Course’, and have completed any onboarding questions, you’ll be taken to the course’s ‘Learning Path’. This page lists every module of your course in the order it should be completed and shows your progress through each one. The course title and module reference are shown at the top of the page. A learning path typically includes: . | Pre-course questionnaire – a short set of questions to complete before you begin. | Modules – the main learning content, each made up of a number of lessons. Each module shows its estimated reading and watching time, the number of lessons, and a progress bar showing how many lessons you’ve completed. | Tests – short assessments to check your understanding. | Post-course questionnaire – a short set of questions to complete once you’ve finished all modules. | Download certificate – your certificate of completion for the course. | . The modules included can vary between courses. For some courses, modules may be optional. ",
+    "url": "/deliver/getting-started#accessing-your-course",
+    
+    "relUrl": "/deliver/getting-started#accessing-your-course"
+  },"58": {
+    "doc": "Getting started with Shybird Deliver",
+    "title": "Moving through your course",
+    "content": "Completing modules in order . Modules are unlocked one at a time, so you’ll need to complete each module before moving on to the next (only true if modules are not optional). The button on the right of each module shows its status: . | Completed – you’ve finished this module. | Start Module – this module is available to begin. | Complete prerequisite first – this module is locked until you finish the previous module. | Complete modules first – this module is locked until you finish all modules. | . Your progress is saved automatically, so you can leave and return to a module at any time and continue where you left off. Types of modules . You can expect to see a variety of content in the modules, including videos, articles, links to other websites, quiz questions, or Likert scales questions. Move through your modules by completing the required activities and clicking the ‘Continue’ button in the bottom right corner at the end of each section. Click the ‘Exit Module’ button in the top right to return to the Learning Path. Learning assistant . As you move through content within a learning path, the AI-enabled Learning assistant will be available to you in the bottom right as the multi-coloured Avencera logo. Selecting this will open up the chat with the learning assistant, which can support you with explaining learning content in a personalised manner. Drag this button to move the Learning Assistant elsewhere if required. Downloading your certificate . Once you’ve completed all modules in your learning path, the ‘Download Certificate’ button will become available. Select it to download your certificate of completion. ",
+    "url": "/deliver/getting-started#moving-through-your-course",
+    
+    "relUrl": "/deliver/getting-started#moving-through-your-course"
+  },"59": {
+    "doc": "Getting started with Shybird Deliver",
+    "title": "Getting help",
+    "content": "Both FAQs and Support can be found using this link: Avencera LMS – Technical Questions . FAQs . If you need help, try reading over the FAQs section: . | Exit any module using the ‘Exit Module’ button, returning you to the ‘Course Overview’ page. | Select the ‘Technical Questions’ button, as indicated by the headphone button. | Select ‘Frequently Asked Questions’. | . From here, you can view answers to FAQs. Get support . If you need help using Shybird Deliver or have a question about your course, support is available through reaching our support team: . | Exit any module using the ‘Exit Module’ button, returning you to the ‘Course Overview’ page. | Click the ‘Technical Questions’ button, as indicated by the headphone button. | Click ‘Contact Us’. | Move through the potential quick fixes, as listed, clicking the checkbox for each to confirm if this has been tried and tested. | Once all these have been marked as completed, the ‘Get Support’ button will become available. | You can view your requests in the top right, using the ‘My Requests’ button. Fill out the form and press ‘Send Request’ for your support to go to our support team. | . ",
+    "url": "/deliver/getting-started#getting-help",
+    
+    "relUrl": "/deliver/getting-started#getting-help"
+  },"60": {
+    "doc": "Getting started with Shybird Deliver",
+    "title": "Access after your course ends",
+    "content": "Your access to Shybird Deliver will remain available for a limited period after your course ends. We recommend downloading and saving any materials, feedback or submitted work you wish to keep before your access is removed. Check any relevant organisational polices to confirm if your organisation allows for this in advance. ",
+    "url": "/deliver/getting-started#access-after-your-course-ends",
+    
+    "relUrl": "/deliver/getting-started#access-after-your-course-ends"
+  },"61": {
+    "doc": "Getting started with Shybird Deliver",
+    "title": "Glossary",
+    "content": "| Word | Meaning | . | Course | A complete learning programme that you’re enrolled on, made up of modules that together form your full learning pathway. | . | Module | A single section of a course, taken as one step in that course’s learning pathway. | . | Certificate | Your proof of completing a course. You can download it once you’ve finished every module in your learning path. | . | Enrolment | The process of being added to a course by your organisation’s admin, which gives you access to it. | . | Learning Assistant | An AI-enabled chat tool that answers your questions and explains course content in a way that’s personalised to you. | . | Learning path | The ordered list of every module in your course, showing what to complete and the order to complete it in. | . | Onboarding | A short set of questions you may be asked the first time you open a course. You only need to answer them once. | . | Resource Library | A place to access resources and learning materials from across all of your courses. | . ",
+    "url": "/deliver/getting-started#glossary",
+    
+    "relUrl": "/deliver/getting-started#glossary"
+  },"62": {
+    "doc": "Getting started with Shybird Deliver",
+    "title": "Getting started with Shybird Deliver",
+    "content": "Get started with Shybird Deliver, where you’ll find everything you need to study online — your course materials, learning activities, assessments and announcements, all in one place. ",
+    "url": "/deliver/getting-started",
+    
+    "relUrl": "/deliver/getting-started"
+  },"63": {
+    "doc": "Getting started with Shybird Design",
+    "title": "Getting started with Shybird Design",
+    "content": " ",
+    "url": "/design/getting-started",
+    
+    "relUrl": "/design/getting-started"
+  },"64": {
+    "doc": "Governance",
+    "title": "Purpose",
+    "content": "This document provides an overview of the governance, risk management, compliance and change management processes that support the delivery of our Shybird product suite. The objective of these processes is to ensure that services are operated effectively, risks are managed appropriately, and changes are introduced in a controlled manner while supporting security, reliability, compliance and customer trust. This document is intended for customers, prospective customers and auditors undertaking procurement, due diligence or assurance activities. ",
+    "url": "/trust/governance#purpose",
+    
+    "relUrl": "/trust/governance#purpose"
+  },"65": {
+    "doc": "Governance",
+    "title": "Scope",
+    "content": "This document applies to: . | SaaS products and services | Production and supporting environments | Service delivery activities | Information security controls | Compliance activities | Organisational governance processes | Third-party suppliers that materially support service delivery | . ",
+    "url": "/trust/governance#scope",
+    
+    "relUrl": "/trust/governance#scope"
+  },"66": {
+    "doc": "Governance",
+    "title": "Governance framework",
+    "content": "We maintain a governance framework that establishes accountability for the management, operation and continual improvement of our services. The framework is designed to: . | Support strategic objectives | Manage operational and compliance risks | Protect customer information | Ensure regulatory obligations are met | Promote effective decision-making | Support continual improvement | . Governance activities include regular review of: . | Risks and mitigations | Security performance | Compliance obligations | Service performance | Major incidents | Significant changes | Customer feedback | Audit findings | . ",
+    "url": "/trust/governance#governance-framework",
+    
+    "relUrl": "/trust/governance#governance-framework"
+  },"67": {
+    "doc": "Governance",
+    "title": "Roles and responsibilities",
+    "content": "Defined roles and responsibilities exist for the management of governance activities. Typical responsibilities include: . Executive leadership . Responsible for: . | Strategic direction | Risk oversight | Regulatory accountability | Resource allocation | Approval of major initiatives | . Product management . Responsible for: . | Product strategy and roadmap | Prioritisation of enhancements | Customer needs and feedback | Product lifecycle management | . Engineering and operations . Responsible for: . | Service reliability | Security implementation | Change delivery | Platform performance | Operational resilience | . Information security and compliance . Responsible for: . | Security governance | Compliance monitoring | Risk assessments | Policy management | Audit coordination | . ",
+    "url": "/trust/governance#roles-and-responsibilities",
+    
+    "relUrl": "/trust/governance#roles-and-responsibilities"
+  },"68": {
+    "doc": "Governance",
+    "title": "Risk management",
+    "content": "Risk management approach . We maintain a risk management process designed to identify, assess, manage and monitor risks that could affect service delivery, customer data, regulatory compliance or business operations. Risk management activities include: . | Risk identification | Risk assessment | Assignment of ownership | Implementation of controls | Ongoing monitoring | Periodic review | . Risk categories . Risks may include: . | Information security risks | Data protection risks | Operational risks | Technology risks | Supplier risks | Business continuity risks | Legal and regulatory risks | Strategic risks | . Risk assessment . Risks are assessed using defined criteria that typically consider: . | Likelihood | Potential impact | Existing controls | Residual risk | Treatment plans | . Risk assessments may be performed: . | Periodically | During project delivery | Before significant service changes | Following security incidents | Following material business changes | . Risk treatment . Risk treatment activities may include: . | Risk reduction through controls | Risk avoidance | Risk transfer | Risk acceptance through documented approvals | . Actions are tracked through to completion and subject to management oversight. ",
+    "url": "/trust/governance#risk-management",
+    
+    "relUrl": "/trust/governance#risk-management"
+  },"69": {
+    "doc": "Governance",
+    "title": "Compliance management",
+    "content": "Compliance programme . We maintain a compliance programme designed to identify, monitor and manage applicable legal, regulatory and contractual obligations. The programme supports compliance with obligations relating to areas such as: . | Data protection and privacy | Information security | Intellectual property | Contractual obligations | Employment legislation | Records management | Accessibility requirements | . Policy framework . Documented policies and procedures are maintained and reviewed periodically. Typical policy areas include: . | Information security | Data protection | Access control | Acceptable use | Incident management | Business continuity | Change management | Supplier management | Secure software development | . Compliance monitoring . Compliance may be monitored through: . | Internal reviews | Control assessments | Management oversight | Vulnerability assessments | Audit activities | Supplier reviews | Corrective action tracking | . Audit and assurance . Independent assurance activities may include: . | Internal audits | External audits | Penetration testing | Certification assessments | Customer due diligence reviews | . Findings are tracked and managed through formal remediation processes. ",
+    "url": "/trust/governance#compliance-management",
+    
+    "relUrl": "/trust/governance#compliance-management"
+  },"70": {
+    "doc": "Governance",
+    "title": "Change management",
+    "content": "Change management objectives . We operate a change management process designed to ensure that changes are assessed, approved, implemented and reviewed in a controlled manner. The objectives of change management are to: . | Reduce service disruption | Maintain security and compliance | Protect service availability | Improve traceability and accountability | Support reliable product delivery | . Types of change . Changes are generally categorised according to their nature and risk. Examples may include: . Standard changes . Pre-approved, low-risk and repeatable activities that follow established implementation procedures. Examples: . | Scheduled infrastructure maintenance | Routine configuration updates | Automated deployments with established controls | . Normal changes . Changes requiring risk assessment and approval before implementation. Examples: . | New functionality | Architectural changes | Database modifications | Integration enhancements | . Emergency changes . Changes implemented to address critical incidents, security vulnerabilities or urgent operational issues. Emergency changes are subject to retrospective review and approval. Change lifecycle . Changes typically follow a documented lifecycle consisting of: . | Change request | Impact assessment | Risk assessment | Review and approval | Testing and validation | Deployment | Post-implementation review | Closure and record retention | . Change assessment . Prior to implementation, changes may be evaluated for: . | Security impact | Privacy impact | Customer impact | Availability impact | Compliance impact | Operational readiness | Rollback capability | . Testing requirements . Changes are expected to undergo appropriate testing before deployment. Testing may include: . | Unit testing | Integration testing | System testing | Regression testing | Security testing | User acceptance testing | . The level of testing is determined according to change risk and complexity. Release management . Changes are normally deployed using planned release processes. Release activities may include: . | Release planning | Deployment approval | Communication activities | Validation checks | Release monitoring | . Post-implementation review . Significant changes may undergo post-implementation review to assess: . | Achievement of objectives | Unexpected impacts | Incident occurrence | Required corrective actions | Lessons learned | . ",
+    "url": "/trust/governance#change-management",
+    
+    "relUrl": "/trust/governance#change-management"
+  },"71": {
+    "doc": "Governance",
+    "title": "Issue and corrective action management",
+    "content": "Issues identified through audits, incidents, testing activities or customer feedback may be managed through a corrective action process. Activities include: . | Identification | Assessment | Assignment of ownership | Remediation planning | Verification of completion | Closure | . Management reporting may be used to monitor progress and effectiveness. ",
+    "url": "/trust/governance#issue-and-corrective-action-management",
+    
+    "relUrl": "/trust/governance#issue-and-corrective-action-management"
+  },"72": {
+    "doc": "Governance",
+    "title": "Supplier governance",
+    "content": "Third-party suppliers that support service delivery may be subject to governance activities including: . | Due diligence assessments | Contract review | Security assessment | Performance monitoring | Periodic review | . The level of oversight is determined by supplier criticality and risk. ",
+    "url": "/trust/governance#supplier-governance",
+    
+    "relUrl": "/trust/governance#supplier-governance"
+  },"73": {
+    "doc": "Governance",
+    "title": "Continuous improvement",
+    "content": "Governance processes are reviewed regularly to identify opportunities for improvement. Inputs to continual improvement include: . | Audit findings | Risk assessments | Security events | Customer feedback | Service metrics | Compliance reviews | Lessons learned | Industry best practices | . ",
+    "url": "/trust/governance#continuous-improvement",
+    
+    "relUrl": "/trust/governance#continuous-improvement"
+  },"74": {
+    "doc": "Governance",
+    "title": "Additional assurance information",
+    "content": "Subject to appropriate confidentiality arrangements, we may provide additional governance information during procurement or due diligence activities, including: . | Risk management methodology | Compliance control mappings | Security policies | Audit summaries | Penetration testing summaries | Change management procedures | Supplier assurance documentation | . ",
+    "url": "/trust/governance#additional-assurance-information",
+    
+    "relUrl": "/trust/governance#additional-assurance-information"
+  },"75": {
+    "doc": "Governance",
+    "title": "Review of this document",
+    "content": "Last reviewed: [Date] . Next review due: [Date] . ",
+    "url": "/trust/governance#review-of-this-document",
+    
+    "relUrl": "/trust/governance#review-of-this-document"
+  },"76": {
+    "doc": "Governance",
+    "title": "Governance",
+    "content": " ",
+    "url": "/trust/governance",
+    
+    "relUrl": "/trust/governance"
+  },"77": {
+    "doc": "Define",
+    "title": "Define",
+    "content": " ",
+    "url": "/define",
+    
+    "relUrl": "/define"
+  },"78": {
+    "doc": "Client administration",
+    "title": "Client administration",
+    "content": " ",
+    "url": "/admin",
+    
+    "relUrl": "/admin"
+  },"79": {
+    "doc": "Trust",
+    "title": "Trust",
+    "content": "We want you to feel comfortable with how we look after and handle your data. This “Trust” site describes the processes and practices we use to keep it safe. ",
+    "url": "/trust",
+    
+    "relUrl": "/trust"
+  },"80": {
+    "doc": "Deliver",
+    "title": "Deliver",
+    "content": " ",
+    "url": "/deliver",
+    
+    "relUrl": "/deliver"
+  },"81": {
+    "doc": "Design",
+    "title": "Design",
+    "content": " ",
+    "url": "/design",
+    
+    "relUrl": "/design"
+  },"82": {
+    "doc": "Home",
+    "title": "Contents",
+    "content": ". | Trust - The policies, processes and procedures we use to keep your data safe | Client administration - The Administration Centre used to manage your users and subscriptions | Shybird Define - Creating rigorous, detailed and controlled specifications for your qualifications | Shybird Design - Creating support materials for your qualifications | Shybird Deliver - A personalised experience for educators and/or participants | Release notes - What’s included in each release | . ",
+    "url": "/#contents",
+    
+    "relUrl": "/#contents"
+  },"83": {
+    "doc": "Home",
+    "title": "Home",
+    "content": "The Shybird suite of products helps organisations to define qualifications, design support materials and deliver those materials to educators and participants. ",
+    "url": "/",
+    
+    "relUrl": "/"
+  },"84": {
+    "doc": "Privacy",
+    "title": "Who we are",
+    "content": "Avencera Ltd is the data controller for Shybird. Trao is our technology partner and acts as data processor, building and operating the platform on our instructions. ",
+    "url": "/trust/privacy#who-we-are",
+    
+    "relUrl": "/trust/privacy#who-we-are"
+  },"85": {
+    "doc": "Privacy",
+    "title": "What we collect and why",
+    "content": "When you use Shybird, you upload source documents (such as existing course or qualification materials) so the platform can help generate qualification structures, learning outcomes and assessment content. We process this information to provide that service to you. Source documents may incidentally contain personal data, for example names of authors or individuals referenced in case studies. We do not ask for this data specifically, and we keep only what is necessary to provide the service. ",
+    "url": "/trust/privacy#what-we-collect-and-why",
+    
+    "relUrl": "/trust/privacy#what-we-collect-and-why"
+  },"86": {
+    "doc": "Privacy",
+    "title": "How AI is used",
+    "content": "Shybird uses AI to help extract and generate content from what you upload. Every output is reviewed by a person before it is finalised, nothing is published automatically. A fuller explanation of how the AI works and what humans control is available in our Responsible AI statement. ",
+    "url": "/trust/privacy#how-ai-is-used",
+    
+    "relUrl": "/trust/privacy#how-ai-is-used"
+  },"87": {
+    "doc": "Privacy",
+    "title": "Who we share data with",
+    "content": "We share data with the following organisations so that Shybird can operate: . | Organisation | Role | Purpose | . | Trao | Processor | Builds and operates the Shybird platform on our behalf | . | Anthropic | Subprocessor | AI processing (primary production provider) | . | OpenAI | Subprocessor | AI processing (specific functions) | . | Resend | Subprocessor | Sending email notifications | . | DigitalOcean | Subprocessor | Hosting (UK) | . | Qdrant Cloud | Subprocessor | Hosting for search functionality (UK, London) | . | Firecrawl, Tavily, Lightcast, O*NET | Subprocessor | Supporting search functions | . Anthropic is the AI provider used to power Shybird. DeepSeek was evaluated during development. Its use was deferred following an internal review on 29 July 2026, in favour of Anthropic. DeepSeek has not processed and does not process any production data or client information. We are telling you this proactively because we think you should know which AI models have been involved in building the product, not only which one is live today. ",
+    "url": "/trust/privacy#who-we-share-data-with",
+    
+    "relUrl": "/trust/privacy#who-we-share-data-with"
+  },"88": {
+    "doc": "Privacy",
+    "title": "Where your data is stored",
+    "content": "Your documents and the content generated from them are stored in the UK. Some processing takes place with providers based in the United States, as set out above. Where data leaves the UK, we rely on legal safeguards that are set out in full in our International Transfer Mechanism document, available on request. ",
+    "url": "/trust/privacy#where-your-data-is-stored",
+    
+    "relUrl": "/trust/privacy#where-your-data-is-stored"
+  },"89": {
+    "doc": "Privacy",
+    "title": "How long we keep your data",
+    "content": "We keep your data for as long as you are actively using the platform. If you delete something, or your account is closed, it moves to a temporary holding period of 90 days before it is permanently deleted from every system it was stored in. Full detail is available on request. ",
+    "url": "/trust/privacy#how-long-we-keep-your-data",
+    
+    "relUrl": "/trust/privacy#how-long-we-keep-your-data"
+  },"90": {
+    "doc": "Privacy",
+    "title": "Your rights",
+    "content": "You can ask us to: . | Access the personal data we hold about you | Correct inaccurate data | Delete your data (subject to any legal reason we may need to keep it) | Restrict or object to how we use it | Receive a copy in a portable format | . We will respond within one calendar month. To make a request, contact us using the details below. ",
+    "url": "/trust/privacy#your-rights",
+    
+    "relUrl": "/trust/privacy#your-rights"
+  },"91": {
+    "doc": "Privacy",
+    "title": "How to contact us",
+    "content": "Email: pmo@avencera.ai . If you are not satisfied with our response, you have the right to complain to the Information Commissioner’s Office (ICO) at ico.org.uk. ",
+    "url": "/trust/privacy#how-to-contact-us",
+    
+    "relUrl": "/trust/privacy#how-to-contact-us"
+  },"92": {
+    "doc": "Privacy",
+    "title": "Privacy",
+    "content": " ",
+    "url": "/trust/privacy",
+    
+    "relUrl": "/trust/privacy"
+  },"93": {
+    "doc": "Release notes",
+    "title": "Release notes",
+    "content": " ",
+    "url": "/release-notes",
+    
+    "relUrl": "/release-notes"
+  },"94": {
+    "doc": "Responsible AI",
+    "title": "Purpose",
+    "content": "This document describes our approach to the responsible design, development, deployment and operation of artificial intelligence (AI) capabilities within our Shybird product suite. Our objective is to ensure that AI technologies are used in a manner that is ethical, transparent, secure, accountable and aligned with customer interests. This document applies to all AI-enabled features provided as part of our services. ",
+    "url": "/trust/responsible-ai#purpose",
+    
+    "relUrl": "/trust/responsible-ai#purpose"
+  },"95": {
+    "doc": "Responsible AI",
+    "title": "Our commitment",
+    "content": "We are committed to the responsible use of AI and to ensuring that AI capabilities support, rather than undermine, human decision-making. Our approach is guided by the following principles: . | Human oversight and accountability | Transparency and explainability | Privacy and data protection | Security and resilience | Fairness and non-discrimination | Reliability and quality | Legal and regulatory compliance | Continuous monitoring and improvement | . ",
+    "url": "/trust/responsible-ai#our-commitment",
+    
+    "relUrl": "/trust/responsible-ai#our-commitment"
+  },"96": {
+    "doc": "Responsible AI",
+    "title": "Scope of AI usage",
+    "content": "AI capabilities within the platform may be used to support functions such as: . | Content generation | Content summarisation | Search and information retrieval | Recommendations and guidance | Classification and categorisation | Workflow automation | Natural language interactions | Analytical insights | . The availability and functionality of AI features may vary by product, tenant or subscription level. ",
+    "url": "/trust/responsible-ai#scope-of-ai-usage",
+    
+    "relUrl": "/trust/responsible-ai#scope-of-ai-usage"
+  },"97": {
+    "doc": "Responsible AI",
+    "title": "Human oversight",
+    "content": "AI outputs are intended to support users and not to replace professional judgement, expertise or organisational decision-making. Our approach includes: . | Maintaining human accountability for business decisions | Providing users with the ability to review AI-generated outputs | Encouraging validation of important recommendations and conclusions | Applying additional review processes where higher-risk use cases are identified | . Users remain responsible for evaluating the suitability of AI-generated content for their specific circumstances. ",
+    "url": "/trust/responsible-ai#human-oversight",
+    
+    "relUrl": "/trust/responsible-ai#human-oversight"
+  },"98": {
+    "doc": "Responsible AI",
+    "title": "Transparency",
+    "content": "We aim to be transparent about where AI technologies are used within our services. Where appropriate, users may be informed when: . | Content has been generated by AI | Recommendations have been produced by AI models | AI-assisted functionality is being used | Automated processing forms part of a workflow | . We seek to provide sufficient information to enable informed use of AI-assisted features. ",
+    "url": "/trust/responsible-ai#transparency",
+    
+    "relUrl": "/trust/responsible-ai#transparency"
+  },"99": {
+    "doc": "Responsible AI",
+    "title": "Accuracy and reliability",
+    "content": "AI systems are probabilistic in nature and may occasionally produce inaccurate, incomplete or misleading outputs. To mitigate these risks we may: . | Evaluate AI capabilities before deployment | Conduct testing against representative use cases | Monitor performance and quality | Implement guardrails and validation controls | Investigate reported issues | Continuously improve AI-enabled services | . Despite these measures, AI-generated outputs should be reviewed before being relied upon for important decisions. ",
+    "url": "/trust/responsible-ai#accuracy-and-reliability",
+    
+    "relUrl": "/trust/responsible-ai#accuracy-and-reliability"
+  },"100": {
+    "doc": "Responsible AI",
+    "title": "Fairness and bias management",
+    "content": "We recognise that AI systems may produce biased or unintended outcomes. To manage these risks we seek to: . | Evaluate AI capabilities before implementation | Assess potential impacts on users | Monitor for unintended outcomes | Review user feedback and reported concerns | Apply corrective actions where required | . We do not intentionally design AI systems to unlawfully discriminate against individuals or groups. ",
+    "url": "/trust/responsible-ai#fairness-and-bias-management",
+    
+    "relUrl": "/trust/responsible-ai#fairness-and-bias-management"
+  },"101": {
+    "doc": "Responsible AI",
+    "title": "Privacy and data protection",
+    "content": "The use of AI capabilities is subject to our data protection and privacy controls. We are committed to: . | Processing personal data lawfully, fairly and transparently | Applying appropriate security measures | Supporting data minimisation principles | Restricting access to authorised personnel | Managing retention and disposal requirements | Maintaining appropriate processor and supplier agreements | . Where AI capabilities process personal data, such processing is governed by our privacy and data protection policies. ",
+    "url": "/trust/responsible-ai#privacy-and-data-protection",
+    
+    "relUrl": "/trust/responsible-ai#privacy-and-data-protection"
+  },"102": {
+    "doc": "Responsible AI",
+    "title": "Customer data and AI training",
+    "content": "Unless explicitly agreed with a customer or stated within contractual documentation, customer data is not used to train proprietary or third-party foundation models. Where AI service providers are utilised, contractual and technical controls are implemented to support the protection of customer information. Customers are encouraged to review service-specific documentation relating to AI-enabled features and associated data processing activities. ",
+    "url": "/trust/responsible-ai#customer-data-and-ai-training",
+    
+    "relUrl": "/trust/responsible-ai#customer-data-and-ai-training"
+  },"103": {
+    "doc": "Responsible AI",
+    "title": "Security of AI services",
+    "content": "AI services are incorporated into our wider information security framework. Security measures may include: . | Access controls | Authentication mechanisms | Secure system design | Logging and monitoring | Incident management procedures | Supplier assurance activities | Vulnerability management processes | . Security risks associated with AI capabilities are considered as part of ongoing risk management activities. ",
+    "url": "/trust/responsible-ai#security-of-ai-services",
+    
+    "relUrl": "/trust/responsible-ai#security-of-ai-services"
+  },"104": {
+    "doc": "Responsible AI",
+    "title": "Environmental sustainability and AI",
+    "content": "We recognise that the development, training and operation of AI systems can consume significant computational resources and energy. When designing, deploying and operating AI-enabled features, we seek to consider their environmental impact alongside customer value, security, privacy and performance requirements. Our approach may include: . | Evaluating whether AI is necessary to achieve a particular outcome | Selecting appropriately sized models for specific use cases | Avoiding unnecessary processing and excessive computation | Optimising prompts, workflows and system architecture to improve efficiency | Monitoring the utilisation of AI services and infrastructure | Removing or redesigning AI features that do not provide sufficient user value | Considering the sustainability practices of AI and cloud service providers | Promoting efficient use of computing resources throughout the product lifecycle | . Proportionate use of AI . We aim to use AI only where it provides a clear benefit to customers, users or business processes. Where a non-AI solution can achieve the same outcome with lower complexity, lower resource consumption or reduced operational risk, this option may be preferred. This approach supports responsible innovation while helping to minimise unnecessary environmental impacts. Sustainable technology choices . When selecting AI technologies, suppliers and deployment architectures, we may consider factors including: . | Resource efficiency | Infrastructure utilisation | Scalability | Service reliability | Environmental commitments of suppliers | Estimated operational impact | . Environmental considerations form one of several factors used during technology selection and solution design. Monitoring and continuous improvement . We seek to continually improve the efficiency of AI-enabled services through: . | Periodic review of AI usage patterns | Evaluation of emerging technologies and models | Removal of redundant or low-value AI workloads | Optimisation of system performance | Review of supplier sustainability commitments | . As AI technology evolves, we will continue to evaluate opportunities to reduce environmental impact while maintaining service quality, security and customer value. ",
+    "url": "/trust/responsible-ai#environmental-sustainability-and-ai",
+    
+    "relUrl": "/trust/responsible-ai#environmental-sustainability-and-ai"
+  },"105": {
+    "doc": "Responsible AI",
+    "title": "Risk management",
+    "content": "AI-related risks are managed through our established governance processes. This may include assessment of risks relating to: . | Privacy | Security | Bias | Accuracy | Reliability | Regulatory compliance | Intellectual property | Customer impact | . Appropriate mitigations are identified, implemented and reviewed as part of ongoing risk management activities. ",
+    "url": "/trust/responsible-ai#risk-management",
+    
+    "relUrl": "/trust/responsible-ai#risk-management"
+  },"106": {
+    "doc": "Responsible AI",
+    "title": "Automated decision-making",
+    "content": "Our services are not intended to make legally binding or solely automated decisions affecting individuals without appropriate human oversight. Where automated processing forms part of a workflow, organisations remain responsible for ensuring that its use complies with applicable legal and regulatory requirements. ",
+    "url": "/trust/responsible-ai#automated-decision-making",
+    
+    "relUrl": "/trust/responsible-ai#automated-decision-making"
+  },"107": {
+    "doc": "Responsible AI",
+    "title": "Supplier and model governance",
+    "content": "Where third-party AI models or AI service providers are used, we seek to perform appropriate due diligence and ongoing oversight. Assessment activities may include consideration of: . | Security controls | Privacy protections | Service reliability | Regulatory compliance | Contractual commitments | Technical capabilities | Supplier risk | . Supplier relationships are reviewed through our supplier governance processes. ",
+    "url": "/trust/responsible-ai#supplier-and-model-governance",
+    
+    "relUrl": "/trust/responsible-ai#supplier-and-model-governance"
+  },"108": {
+    "doc": "Responsible AI",
+    "title": "Incident management",
+    "content": "Any identified AI-related incidents, vulnerabilities or concerns may be managed through established incident management procedures. Activities may include: . | Investigation | Risk assessment | Containment actions | Corrective measures | Customer communications where appropriate | Continuous improvement activities | . ",
+    "url": "/trust/responsible-ai#incident-management",
+    
+    "relUrl": "/trust/responsible-ai#incident-management"
+  },"109": {
+    "doc": "Responsible AI",
+    "title": "Monitoring and continuous improvement",
+    "content": "AI capabilities are reviewed periodically to evaluate effectiveness, safety, accuracy and alignment with organisational objectives. Inputs to improvement activities may include: . | User feedback | Incident reports | Regulatory developments | Risk assessments | Security reviews | Supplier updates | Product reviews | Audit findings | . Appropriate actions are prioritised and implemented through normal governance processes. ",
+    "url": "/trust/responsible-ai#monitoring-and-continuous-improvement-1",
+    
+    "relUrl": "/trust/responsible-ai#monitoring-and-continuous-improvement-1"
+  },"110": {
+    "doc": "Responsible AI",
+    "title": "Customer responsibilities",
+    "content": "Customers are responsible for: . | Determining whether AI-generated outputs are appropriate for their purposes | Implementing organisational governance for AI usage | Providing suitable training and guidance to users | Complying with applicable legal and regulatory requirements | Reviewing AI-generated content before acting upon it | . AI outputs should not be treated as legal, financial, medical or other professional advice unless independently verified by appropriately qualified professionals. ",
+    "url": "/trust/responsible-ai#customer-responsibilities",
+    
+    "relUrl": "/trust/responsible-ai#customer-responsibilities"
+  },"111": {
+    "doc": "Responsible AI",
+    "title": "Future regulatory compliance",
+    "content": "We monitor developments in AI-related laws, regulations and standards and seek to adapt our governance framework accordingly. Where applicable, we will update our policies, processes and controls to support evolving regulatory requirements and recognised best practices. ",
+    "url": "/trust/responsible-ai#future-regulatory-compliance",
+    
+    "relUrl": "/trust/responsible-ai#future-regulatory-compliance"
+  },"112": {
+    "doc": "Responsible AI",
+    "title": "Additional assurance information",
+    "content": "Subject to appropriate confidentiality arrangements, we may provide additional information relating to AI governance, including: . | AI risk assessment methodologies | AI feature descriptions | Supplier assurance information | Privacy impact assessments | Security controls | Testing approaches | Governance frameworks | . ",
+    "url": "/trust/responsible-ai#additional-assurance-information",
+    
+    "relUrl": "/trust/responsible-ai#additional-assurance-information"
+  },"113": {
+    "doc": "Responsible AI",
+    "title": "Review of this document",
+    "content": "Last reviewed: [Date] . Next review due: [Date] . ",
+    "url": "/trust/responsible-ai#review-of-this-document",
+    
+    "relUrl": "/trust/responsible-ai#review-of-this-document"
+  },"114": {
+    "doc": "Responsible AI",
+    "title": "Responsible AI",
+    "content": " ",
+    "url": "/trust/responsible-ai",
+    
+    "relUrl": "/trust/responsible-ai"
+  },"115": {
+    "doc": "Security",
+    "title": "Purpose",
+    "content": "This document provides an overview of the information security controls, governance arrangements and operational practices used to protect the confidentiality, integrity and availability of our Software as a Service (SaaS) platform and customer information. The objective of our information security programme is to safeguard customer data, support the reliable delivery of services and maintain compliance with applicable legal, regulatory and contractual obligations. This document is intended for customers, prospective customers and auditors undertaking procurement, assurance or due diligence activities. ",
+    "url": "/trust/security#purpose",
+    
+    "relUrl": "/trust/security#purpose"
+  },"116": {
+    "doc": "Security",
+    "title": "Scope",
+    "content": "This document applies to: . | SaaS applications and services | Production and supporting environments | Customer data and information assets | Employees, contractors and authorised users | Operational processes supporting service delivery | Third-party suppliers that process or support customer information | . ",
+    "url": "/trust/security#scope",
+    
+    "relUrl": "/trust/security#scope"
+  },"117": {
+    "doc": "Security",
+    "title": "Security governance",
+    "content": "Information security is managed through a formal governance framework that supports risk management, compliance and continual improvement. Our security objectives are to: . | Protect customer information from unauthorised access, disclosure, alteration or loss | Support service availability and resilience | Manage security risks appropriately | Maintain regulatory and contractual compliance | Promote security awareness throughout the organisation | . Security performance is reviewed regularly through management oversight, risk management and assurance activities. ",
+    "url": "/trust/security#security-governance",
+    
+    "relUrl": "/trust/security#security-governance"
+  },"118": {
+    "doc": "Security",
+    "title": "Security principles",
+    "content": "Our security programme is guided by the following principles: . | Security by design | Security by default | Least privilege access | Defence in depth | Risk-based decision making | Continuous improvement | Accountability and traceability | Privacy and security integration | . Security requirements are considered throughout the product lifecycle. ",
+    "url": "/trust/security#security-principles",
+    
+    "relUrl": "/trust/security#security-principles"
+  },"119": {
+    "doc": "Security",
+    "title": "Security organisation and responsibilities",
+    "content": "Defined responsibilities exist for managing information security across the organisation. Executive leadership . Responsible for: . | Security oversight | Risk appetite | Strategic direction | Allocation of resources | . Product and engineering teams . Responsible for: . | Secure design and development | Security testing | Vulnerability remediation | Secure deployment practices | . Operations teams . Responsible for: . | Monitoring and alerting | Incident response | Service resilience | Access administration | . Employees and contractors . Responsible for: . | Compliance with security policies | Protection of information assets | Incident reporting | Security awareness obligations | . ",
+    "url": "/trust/security#security-organisation-and-responsibilities",
+    
+    "relUrl": "/trust/security#security-organisation-and-responsibilities"
+  },"120": {
+    "doc": "Security",
+    "title": "Risk management",
+    "content": "Security risks are managed through a structured risk management process. Activities may include: . | Risk identification | Threat assessment | Vulnerability assessment | Control selection | Risk treatment planning | Ongoing review and monitoring | . Security risks are reviewed periodically and following significant changes, incidents or emerging threats. ",
+    "url": "/trust/security#risk-management",
+    
+    "relUrl": "/trust/security#risk-management"
+  },"121": {
+    "doc": "Security",
+    "title": "Access control",
+    "content": "Access to systems and information is managed using the principle of least privilege. Controls may include: . | Role-based access control | User authentication requirements | Multi-factor authentication | Segregation of duties | Privileged access management | Access approval workflows | Regular access reviews | . Access rights are granted according to business need and reviewed periodically. ",
+    "url": "/trust/security#access-control",
+    
+    "relUrl": "/trust/security#access-control"
+  },"122": {
+    "doc": "Security",
+    "title": "Identity and authentication",
+    "content": "Authentication controls are implemented to protect customer and administrative accounts. These controls may include: . | Strong password requirements | Multi-factor authentication | Session management controls | Account lockout protections | Secure credential storage | Monitoring of authentication events | . Security-sensitive administrative access is subject to enhanced controls. ",
+    "url": "/trust/security#identity-and-authentication",
+    
+    "relUrl": "/trust/security#identity-and-authentication"
+  },"123": {
+    "doc": "Security",
+    "title": "Data protection",
+    "content": "Customer information is protected through a combination of organisational and technical controls. Measures may include: . | Data classification | Encryption in transit | Encryption at rest | Access controls | Data retention controls | Secure disposal processes | Audit logging | . Personal data is processed in accordance with applicable data protection requirements. ",
+    "url": "/trust/security#data-protection",
+    
+    "relUrl": "/trust/security#data-protection"
+  },"124": {
+    "doc": "Security",
+    "title": "Secure software development",
+    "content": "Security is incorporated into the software development lifecycle. Practices may include: . | Security requirements definition | Secure coding standards | Code review processes | Dependency management | Vulnerability scanning | Security testing | Change management controls | . Security considerations are assessed before significant releases are deployed. ",
+    "url": "/trust/security#secure-software-development",
+    
+    "relUrl": "/trust/security#secure-software-development"
+  },"125": {
+    "doc": "Security",
+    "title": "Vulnerability management",
+    "content": "We maintain processes for identifying, assessing and remediating vulnerabilities. Activities may include: . | Automated scanning | Dependency analysis | Threat intelligence monitoring | Security testing | Prioritised remediation | . Vulnerabilities are assessed according to their severity, likelihood and potential impact. Typical remediation targets . | Severity | Target remediation period | . | Critical | As soon as practicable, typically within 72 hours | . | High | Typically within 14 days | . | Medium | Typically within 30 days | . | Low | Risk-based scheduling | . Actual remediation times may vary depending on operational risk and mitigating controls. ",
+    "url": "/trust/security#vulnerability-management",
+    
+    "relUrl": "/trust/security#vulnerability-management"
+  },"126": {
+    "doc": "Security",
+    "title": "Security testing and assurance",
+    "content": "Security assurance activities may include: . | Vulnerability assessments | Penetration testing | Configuration reviews | Secure code review | Architecture review | Risk assessments | . Significant findings are tracked through corrective action processes until resolved or formally accepted. ",
+    "url": "/trust/security#security-testing-and-assurance",
+    
+    "relUrl": "/trust/security#security-testing-and-assurance"
+  },"127": {
+    "doc": "Security",
+    "title": "Logging and monitoring",
+    "content": "Security monitoring capabilities are maintained to support the detection and investigation of potential security events. Monitoring activities may include: . | Authentication monitoring | Privileged access monitoring | Infrastructure monitoring | Application monitoring | Network monitoring | Security event analysis | . Logs are retained in accordance with operational, legal and regulatory requirements. ",
+    "url": "/trust/security#logging-and-monitoring",
+    
+    "relUrl": "/trust/security#logging-and-monitoring"
+  },"128": {
+    "doc": "Security",
+    "title": "Incident management",
+    "content": "We maintain an incident management process for the detection, assessment, escalation, investigation and resolution of security incidents. The process supports: . | Rapid identification of incidents | Containment and mitigation | Investigation and analysis | Recovery activities | Customer communications where appropriate | Lessons learned and continual improvement | . Security incidents are managed according to defined severity classifications and escalation procedures. ",
+    "url": "/trust/security#incident-management",
+    
+    "relUrl": "/trust/security#incident-management"
+  },"129": {
+    "doc": "Security",
+    "title": "Business continuity and disaster recovery",
+    "content": "Information security is integrated with business continuity and disaster recovery planning. Measures may include: . | Backup and recovery capabilities | Service resilience controls | Incident response coordination | Disaster recovery testing | Recovery planning | . Further information is available within our Business Continuity and Disaster Recovery Overview. ",
+    "url": "/trust/security#business-continuity-and-disaster-recovery",
+    
+    "relUrl": "/trust/security#business-continuity-and-disaster-recovery"
+  },"130": {
+    "doc": "Security",
+    "title": "Supplier security management",
+    "content": "Third-party suppliers are assessed according to the risks associated with the services they provide. Activities may include: . | Supplier due diligence | Security reviews | Contractual security requirements | Performance monitoring | Periodic reassessment | . Critical suppliers may be subject to enhanced oversight arrangements. ",
+    "url": "/trust/security#supplier-security-management",
+    
+    "relUrl": "/trust/security#supplier-security-management"
+  },"131": {
+    "doc": "Security",
+    "title": "Personnel security",
+    "content": "Employees and contractors are subject to appropriate personnel security controls. Measures may include: . | Recruitment screening | Confidentiality obligations | Security awareness training | Acceptable use requirements | Security policy acknowledgement | . Access to information is removed or adjusted promptly when responsibilities change or engagement ends. ",
+    "url": "/trust/security#personnel-security",
+    
+    "relUrl": "/trust/security#personnel-security"
+  },"132": {
+    "doc": "Security",
+    "title": "Security awareness and training",
+    "content": "Security awareness forms part of our security programme. Training activities may include: . | Information security awareness | Data protection and privacy | Phishing awareness | Secure handling of information | Incident reporting responsibilities | . Training is reviewed and refreshed periodically. ",
+    "url": "/trust/security#security-awareness-and-training",
+    
+    "relUrl": "/trust/security#security-awareness-and-training"
+  },"133": {
+    "doc": "Security",
+    "title": "Data residency and hosting",
+    "content": "Information regarding hosting arrangements, data residency and infrastructure providers may be provided during procurement and due diligence activities. Customers with specific residency, sovereignty or compliance requirements should raise these during procurement discussions. ",
+    "url": "/trust/security#data-residency-and-hosting",
+    
+    "relUrl": "/trust/security#data-residency-and-hosting"
+  },"134": {
+    "doc": "Security",
+    "title": "Compliance and assurance",
+    "content": "We maintain policies, procedures and controls designed to support compliance with applicable obligations. Depending on the service and customer requirements, these may include: . | UK GDPR | Data Protection Act 2018 | Public sector contractual requirements | Accessibility requirements | Cyber security obligations | Industry standards and recognised good practice | . Evidence may be made available under appropriate confidentiality arrangements. ",
+    "url": "/trust/security#compliance-and-assurance",
+    
+    "relUrl": "/trust/security#compliance-and-assurance"
+  },"135": {
+    "doc": "Security",
+    "title": "Shared responsibility model",
+    "content": "Security is a shared responsibility between the service provider and the customer. Our responsibilities . Typically include: . | Operating and securing the SaaS platform | Protecting infrastructure within our control | Managing application security | Security monitoring and incident response | Backup and recovery activities | . Customer responsibilities . Typically include: . | Managing user accounts and permissions | Configuring organisational policies | Protecting endpoint devices | User awareness and training | Reviewing audit information | Managing customer-controlled integrations | . ",
+    "url": "/trust/security#shared-responsibility-model",
+    
+    "relUrl": "/trust/security#shared-responsibility-model"
+  },"136": {
+    "doc": "Security",
+    "title": "Continuous improvement",
+    "content": "Information security is subject to continual review and improvement. Inputs include: . | Risk assessments | Security incidents | Vulnerability findings | Audit results | Customer feedback | Threat intelligence | Regulatory developments | . Improvement actions are prioritised and tracked through established governance processes. ",
+    "url": "/trust/security#continuous-improvement",
+    
+    "relUrl": "/trust/security#continuous-improvement"
+  },"137": {
+    "doc": "Security",
+    "title": "Additional assurance information",
+    "content": "Subject to appropriate confidentiality arrangements, additional information may be provided during procurement and due diligence activities, including: . | Security architecture overviews | Penetration testing summaries | Risk management methodologies | Security policies | Incident management procedures | Supplier assurance information | Compliance evidence | Security control mappings | . ",
+    "url": "/trust/security#additional-assurance-information",
+    
+    "relUrl": "/trust/security#additional-assurance-information"
+  },"138": {
+    "doc": "Security",
+    "title": "Review of this document",
+    "content": "Last reviewed: [Date] . Next review due: [Date] . ",
+    "url": "/trust/security#review-of-this-document",
+    
+    "relUrl": "/trust/security#review-of-this-document"
+  },"139": {
+    "doc": "Security",
+    "title": "Security",
+    "content": " ",
+    "url": "/trust/security",
+    
+    "relUrl": "/trust/security"
+  },"140": {
+    "doc": "Status",
+    "title": "Status",
+    "content": ". | Service availability targets | Monitoring and alerting | Change management practices | Release management processes | Support arrangements | . ",
+    "url": "/trust/status",
+    
+    "relUrl": "/trust/status"
+  }
+}
