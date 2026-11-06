@@ -25,12 +25,12 @@ We share data with the following organisations so that Shybird can operate:
 | Organisation | Role | Purpose |
 |---|---|---|
 | Trao | Processor | Builds and operates the Shybird platform on our behalf |
-| Anthropic | Subprocessor | AI processing (primary production provider) |
-| OpenAI | Subprocessor | AI processing (specific functions) |
-| Resend | Subprocessor | Sending email notifications |
-| DigitalOcean | Subprocessor | Hosting (UK) |
-| Qdrant Cloud | Subprocessor | Hosting for search functionality (UK, London) |
-| Firecrawl, Tavily, Lightcast, O*NET | Subprocessor | Supporting search functions |
+| Anthropic | Sub-processor | AI processing (primary production provider) |
+| OpenAI | Sub-processor | AI processing (specific functions) |
+| Resend | Sub-processor | Sending email notifications |
+| DigitalOcean | Sub-processor | Hosting (UK) |
+| Qdrant Cloud | Sub-processor | Hosting for search functionality (UK, London) |
+| Firecrawl, Tavily, Lightcast, O*NET | Sub-processor | Supporting search functions |
 
 Anthropic is the AI provider used to power Shybird. DeepSeek was evaluated during development. Its use was deferred following an internal review on 29 July 2026, in favour of Anthropic. DeepSeek has not processed and does not process any production data or client information. We are telling you this proactively because we think you should know which AI models have been involved in building the product, not only which one is live today. 
 

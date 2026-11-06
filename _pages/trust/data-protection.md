@@ -36,7 +36,7 @@ For customer content uploaded to or created within Shybird, including qualificat
 
 Avencera Ltd acts as a data processor and processes such information only on the documented instructions of the customer.
 
-Our suppliers and development parters acts as sub-processors to Avencera in operating the platform.
+Our suppliers and development partners act as sub-processors to Avencera in operating the platform.
 
 ### Service administration data
 
