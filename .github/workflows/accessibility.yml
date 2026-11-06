@@ -1,0 +1,57 @@
+name: Accessibility (WCAG 2.2 AA)
+
+# Runs axe-core WCAG 2.2 A/AA checks against every page of the built site.
+# - On pull requests into staging/main, as a status check.
+# - Called by deploy-staging.yml and deploy-production.yml, which only deploy if it passes.
+on:
+  pull_request:
+    branches: [ "staging", "main" ]
+  workflow_call:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  wcag:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+
+      - name: Install gems
+        run: bundle install
+
+      - name: Build Jekyll site
+        run: bundle exec jekyll build --destination _site
+        env:
+          JEKYLL_ENV: production
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+          cache-dependency-path: scripts/a11y/package-lock.json
+
+      - name: Install checker
+        working-directory: scripts/a11y
+        run: |
+          npm ci
+          npx playwright install --with-deps chromium
+
+      - name: Run WCAG 2.2 AA checks
+        run: node scripts/a11y/check.mjs --site _site --report a11y-report.json
+
+      - name: Upload report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: a11y-report
+          path: a11y-report.json
+          if-no-files-found: ignore

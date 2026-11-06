@@ -1,0 +1,14 @@
+{
+  "name": "shybird-docs-a11y",
+  "private": true,
+  "type": "module",
+  "description": "WCAG 2.2 Level AA checks (axe-core + Playwright) for the built Shybird docs site",
+  "scripts": {
+    "check": "node check.mjs"
+  },
+  "dependencies": {
+    "@axe-core/playwright": "4.10.0",
+    "axe-core": "4.10.0",
+    "playwright": "1.47.2"
+  }
+}

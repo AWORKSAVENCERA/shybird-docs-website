@@ -6,7 +6,11 @@ on:
     branches: [ "staging" ]  
  
 jobs:  
+  accessibility:
+    uses: ./.github/workflows/accessibility.yml
+
   build-and-deploy:  
+    needs: accessibility    # only deploy if the WCAG 2.2 AA checks pass
     runs-on: ubuntu-latest  
     steps:  
       # Step 1: Check out the code from the staging branch  
