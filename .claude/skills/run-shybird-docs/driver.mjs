@@ -7,6 +7,7 @@
 //   node .claude/skills/run-shybird-docs/driver.mjs shot /trust/security [/other ...]
 //   node .claude/skills/run-shybird-docs/driver.mjs search "business continuity"
 //   node .claude/skills/run-shybird-docs/driver.mjs links               # crawl sidebar + content links, report non-200s
+//   node .claude/skills/run-shybird-docs/driver.mjs tab /trust/security 5   # press Tab N times, print focus order, screenshot
 //
 // Env: BASE_URL (default http://127.0.0.1:4000), SHOTS (default /tmp/shybird-shots),
 //      WIDTH (default 1280; use 400 for a mobile check), FULL (default 1; FULL=0 = viewport-only shot)
@@ -79,6 +80,23 @@ try {
   if (cmd === 'shot') { for (const p of args.length ? args : ['/']) if ((await shot(p)) >= 400) failed++; }
   else if (cmd === 'search') await search(args.join(' ') || 'security');
   else if (cmd === 'links') failed += await links();
+  else if (cmd === 'tab') {
+    // Keyboard check (WCAG 2.1.1 / 2.4.3 / 2.4.7 / 2.4.11): walk the focus order, screenshot the last focused element.
+    const [path = '/', n = '5'] = args;
+    await page.goto(BASE + path, { waitUntil: 'networkidle' });
+    for (let i = 1; i <= Number(n); i++) {
+      await page.keyboard.press('Tab');
+      const f = await page.evaluate(() => {
+        const el = document.activeElement, r = el.getBoundingClientRect(), cs = getComputedStyle(el);
+        return { tag: el.tagName.toLowerCase(), text: (el.getAttribute('aria-label') || el.textContent || el.value || '').trim().replace(/\s+/g, ' ').slice(0, 40),
+          visible: r.width > 0 && r.height > 0, outline: cs.outlineStyle !== 'none' || cs.boxShadow !== 'none' };
+      });
+      console.log(`${i}. <${f.tag}> "${f.text}"${f.visible ? '' : ' [NOT VISIBLE]'}${f.outline ? '' : ' [no outline/box-shadow - check focus is visible]'}`);
+    }
+    const file = `${SHOTS}/tab-${slug(path)}-${n}-${WIDTH}.png`;
+    await page.screenshot({ path: file });
+    console.log(`-> ${file}`);
+  }
   else if (cmd === 'smoke') {
     for (const p of ['/', '/trust/', '/trust/security', '/trust/privacy', '/release-notes'])
       if ((await shot(p)) >= 400) failed++;

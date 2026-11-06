@@ -6,3 +6,4 @@ vendor
 
 # macOS
 .DS_Store
+.claude/state/

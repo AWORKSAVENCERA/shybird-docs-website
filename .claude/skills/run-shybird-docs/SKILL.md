@@ -49,6 +49,9 @@ node .claude/skills/run-shybird-docs/driver.mjs links                   # BFS cr
 | `shot <path>...` | Takes a full-page screenshot of each path and prints its HTTP status and `<h1>`. |
 | `search <query>` | Types into the Just the Docs search, prints the top 5 results, screenshots them and clicks the first. |
 | `links` | Crawls from `/` and prints `BROKEN <status> <path>` for each failing link. Exits 1 if any link fails. |
+| `tab <path> [n]` | Presses Tab *n* times (default 5) and prints each focused element, flagging any that are invisible or have no outline. Then screenshots the page. Use it for the accessibility skill's keyboard check. |
+
+For the WCAG 2.2 AA check, use `node scripts/a11y/check.mjs` (see the `accessibility` skill). It builds and serves its own copy of the site, so it doesn't need this server.
 
 - Screenshots are saved to `/tmp/shybird-shots/<path-slug>-<width>.png`. Open them with Read to check they look right.
 - Set `BASE_URL` to point the driver at another server, `SHOTS` to change the screenshot folder, `WIDTH` to set the viewport width (default 1280) and `FULL=0` for a viewport-only shot.
@@ -84,5 +87,6 @@ There's no test suite. Use `driver.mjs smoke` together with a clean `jekyll buil
 
 ## Troubleshooting
 
+- **`jekyll serve` exits 1 straight away, and `/tmp/jekyll.log` ends in a Bundler stack trace**: an earlier server is still holding port 4000, so the `curl` wait succeeds against the old one. Run `lsof -ti:4000 -sTCP:LISTEN | xargs -r kill`, then start the server again.
 - **`locator.waitFor: Timeout 10000ms exceeded ... .search-results .search-result`**: you're driving the search with `fill`. Type the keys instead (see Gotchas).
 - **`Defaults: An invalid front-matter default set was found`**: the `defaults:` entry in `_config.yml` has a `scope` but no `values`. It now sets `layout: default2`, so keep a `values` key in that block.
