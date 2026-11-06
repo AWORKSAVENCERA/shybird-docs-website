@@ -3,19 +3,19 @@
 {
 	"name": "Jekyll",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/jekyll:2-bookworm"
+	"image": "mcr.microsoft.com/devcontainers/jekyll:2-bookworm",
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
 	"features": {
      "ghcr.io/anthropics/devcontainer-features/claude-code:1.0": {}
-   }
+   },
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 
-	// Uncomment the next line to run commands after the container is created.
-	// "postCreateCommand": "jekyll --version"
+	// Enable the repo's git hooks (commit-msg), install gems, and install the WCAG checker + headless Chromium.
+	"postCreateCommand": "git config core.hooksPath .githooks && bundle install && cd scripts/a11y && npm ci && npx playwright install --with-deps chromium"
 
 	// Configure tool-specific properties.
 	// "customizations": {},
