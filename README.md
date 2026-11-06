@@ -142,13 +142,22 @@ The types are `content`, `fix`, `a11y`, `style`, `feat`, `docs`, `build`, `ci`, 
 
 ## Deployment
 
-Deployment uses GitHub Actions with a two-branch flow:
+Deployment uses one GitHub Actions workflow, `deploy-pages.yml`, which publishes production and staging together as a single GitHub Pages site:
 
-| Branch | Workflow | Result |
-| --- | --- | --- |
-| `staging` | `deploy-staging.yml` | Runs the WCAG check. If it passes, builds the site and publishes it to the `staging/` folder of the `gh-pages` branch |
-| `main` | `deploy-production.yml` | Runs the WCAG check. If it passes, builds the site and publishes it to the root of the `gh-pages` branch (orphan commit) |
-| `gh-pages` | `jekyll-site-build.yml` | Deploys the `gh-pages` branch to GitHub Pages (can also be run manually) |
+| Branch | Published at |
+| --- | --- |
+| `main` | https://docs.shybird.ai/ |
+| `staging` | https://docs.shybird.ai/staging/ (marked `noindex` so search engines skip it) |
+
+A push to either branch rebuilds **both** branches. Staging is built with `_config.staging.yml` layered on top of `_config.yml`, which sets `baseurl: /staging`. The WCAG check then runs on the combined site, and nothing is published unless every page in both sites passes. So if staging has an accessibility failure, production deploys are blocked too until it's fixed.
+
+The staging site is public: GitHub Pages can't restrict access on this plan.
+
+One-off repository setup:
+
+1. **Settings → Pages → Build and deployment → Source:** GitHub Actions.
+2. **Settings → Pages → Custom domain:** `docs.shybird.ai`, then tick **Enforce HTTPS** once the certificate is issued. DNS needs a `CNAME` record pointing `docs` to the organisation's `github.io` host.
+3. **Settings → Environments → github-pages → Deployment branches:** allow `main` and `staging`.
 
 Typical workflow:
 
@@ -166,4 +175,3 @@ These came up while reviewing the repo and are worth tidying:
 - **Placeholder description.** `description` in `_config.yml` still contains the Jekyll boilerplate text, which shows up in search-engine metadata.
 - **Unused legacy templates.** The `x*` layouts and `_includes/nav.html`, `footer.html` and `xhead.html` are no longer used. `nav.html` also links to `/security`, `/privacy` and `/status`, which don't exist. Consider deleting these files.
 - **Incomplete content.** The Design section's `index.md` has no `nav_order`, so its position in the sidebar isn't fixed. Several section and getting-started pages are still empty stubs.
-- **Double build.** `jekyll-site-build.yml` runs Jekyll again on the `gh-pages` branch, which already holds built HTML. To serve that output exactly as it is, consider adding a `.nojekyll` file or setting GitHub Pages to **Deploy from a branch → `gh-pages`**.

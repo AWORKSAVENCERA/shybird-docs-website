@@ -1,0 +1,5 @@
+# Overrides for the staging build, layered on top of _config.yml:
+#   bundle exec jekyll build --config _config.yml,_config.staging.yml
+# The deploy-pages workflow applies the same settings when it builds staging.
+baseurl: "/staging"
+noindex: true # keep the staging site out of search engines (see _includes/head_custom.html)

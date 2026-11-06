@@ -1,0 +1,118 @@
+name: Deploy to GitHub Pages
+
+# Publishes production and staging together as one GitHub Pages site:
+#   main    -> https://docs.shybird.ai/
+#   staging -> https://docs.shybird.ai/staging/
+#
+# A push to either branch rebuilds BOTH branches, so neither deploy can wipe
+# out the other. The combined site is checked against WCAG 2.2 AA and is only
+# published if every page in both sites passes.
+#
+# Repository setup (one-off):
+#   Settings -> Pages -> Source: GitHub Actions
+#   Settings -> Environments -> github-pages -> allow the main and staging branches
+on:
+  push:
+    branches: [ "main", "staging" ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write       # publish to GitHub Pages
+  id-token: write    # verify the deployment came from this workflow
+
+# One deployment at a time. A queued run is replaced by a newer one (which
+# builds the latest of both branches anyway); a running deploy is never cancelled.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          path: src-main
+
+      - name: Check out staging
+        uses: actions/checkout@v4
+        with:
+          ref: staging
+          path: src-staging
+
+      # The WCAG checker comes from the commit that triggered this run.
+      - name: Check out checker
+        uses: actions/checkout@v4
+        with:
+          path: src-ci
+          sparse-checkout: scripts/a11y
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+
+      - name: Build production (main)
+        working-directory: src-main
+        run: |
+          bundle install
+          bundle exec jekyll build --destination "$GITHUB_WORKSPACE/_deploy"
+        env:
+          JEKYLL_ENV: production
+
+      # _config.staging.yml sets baseurl /staging and noindex. It is listed
+      # inline in case the staging branch predates that file.
+      - name: Build staging
+        working-directory: src-staging
+        run: |
+          bundle install
+          printf 'baseurl: "/staging"\nnoindex: true\n' > "$RUNNER_TEMP/staging.yml"
+          bundle exec jekyll build \
+            --config "_config.yml,$RUNNER_TEMP/staging.yml" \
+            --destination "$GITHUB_WORKSPACE/_deploy/staging"
+        env:
+          JEKYLL_ENV: production
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+          cache-dependency-path: src-ci/scripts/a11y/package-lock.json
+
+      - name: Install checker
+        working-directory: src-ci/scripts/a11y
+        run: |
+          npm ci
+          npx playwright install --with-deps chromium
+
+      # Failing pages are reported by path; anything under /staging/ is the staging site.
+      - name: Run WCAG 2.2 AA checks (production and staging)
+        run: node src-ci/scripts/a11y/check.mjs --site _deploy --report a11y-report.json
+
+      - name: Upload WCAG report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: a11y-report
+          path: a11y-report.json
+          if-no-files-found: ignore
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _deploy
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,12 +1,11 @@
 name: Accessibility (WCAG 2.2 AA)
 
 # Runs axe-core WCAG 2.2 A/AA checks against every page of the built site.
-# - On pull requests into staging/main, as a status check.
-# - Called by deploy-staging.yml and deploy-production.yml, which only deploy if it passes.
+# On pull requests into staging/main, as a status check.
+# (Deploys run their own check on the combined site - see deploy-pages.yml.)
 on:
   pull_request:
     branches: [ "staging", "main" ]
-  workflow_call:
   workflow_dispatch:
 
 permissions:

@@ -9,9 +9,8 @@ description: Git conventions for the Shybird docs repo - branches, what to commi
 
 | Branch | Pushing it... |
 |---|---|
-| `staging` | Deploys to the **staging** site (`gh-pages` → `/staging`) once the WCAG check passes |
+| `staging` | Deploys to the **staging** site (docs.shybird.ai/staging/) once the WCAG check passes |
 | `main` | Deploys to **production** (docs.shybird.ai) once the WCAG check passes |
-| `gh-pages` | Build output only. Never commit to it by hand. |
 
 - **Never push or open a PR unless the user explicitly asks.** Any push to `staging` or `main` publishes the site.
 - Work on `staging`, or on a short-lived branch merged into it. Content reaches `main` through a PR from `staging`.

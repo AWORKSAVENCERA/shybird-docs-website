@@ -1,0 +1,7 @@
+{%- comment -%}
+  Added to every page's <head> by the Just the Docs theme.
+  The staging build sets `noindex: true` (see _config.staging.yml).
+{%- endcomment -%}
+{%- if site.noindex %}
+<meta name="robots" content="noindex, nofollow">
+{%- endif %}
