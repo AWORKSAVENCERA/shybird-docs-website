@@ -1,16 +1,37 @@
 ---
 layout: null
-title: LLMS.txt
+sitemap: false
 ---
- 
-# LLM Feed for {{ site.url }}
-_Generated: {{ site.time | date_to_rfc822 }}_
- 
- 
-## All pages
-{% for page in site.pages %}{% if page.url contains '.xml' or page.url contains 'assets' %}{% else %}- [{{ page.title }}]({{ page.url }}){% endif %}
-{% endfor %}
+{%- comment -%}
+  llms.txt (https://llmstxt.org/): a Markdown index of the site for LLMs and AI assistants.
+  Sections are the top-level pages that have child pages; other top-level pages go under "Overview".
+  Each link's description comes from the page's `description:` front matter.
+  Pages with `sitemap: false` (404, drafts) are left out.
+{%- endcomment -%}
+{%- assign base = site.url | append: site.baseurl -%}
+{%- assign pages = site.html_pages | where_exp: "p", "p.sitemap != false" -%}
+{%- assign top = pages | where_exp: "p", "p.parent == nil" | sort: "nav_order", "last" -%}
+# {{ site.title }}
 
-## All posts 
-{% for post in site.posts %}- [{{ post.title }}]({{ site.url }}{{ post.url }})
-{% endfor %}
+> {{ site.description | strip }}
+
+{{ site.title }} is published by Avencera Ltd. Shybird is a platform for awarding organisations with three products: Shybird Define, Shybird Design and Shybird Deliver.
+
+## Overview
+{% for p in top %}
+{%- assign children = pages | where: "parent", p.title -%}
+{%- if children.size == 0 %}
+- [{{ p.title }}]({{ base }}{{ p.url }}){% if p.description %}: {{ p.description | strip_newlines }}{% endif %}
+{%- endif -%}
+{%- endfor %}
+{% for p in top %}
+{%- assign children = pages | where: "parent", p.title | sort: "title" -%}
+{%- if children.size > 0 %}
+## {{ p.title }}
+
+- [{{ p.title }}]({{ base }}{{ p.url }}){% if p.description %}: {{ p.description | strip_newlines }}{% endif %}
+{%- for c in children %}
+- [{{ c.title }}]({{ base }}{{ c.url }}){% if c.description %}: {{ c.description | strip_newlines }}{% endif %}
+{%- endfor %}
+{% endif -%}
+{%- endfor %}

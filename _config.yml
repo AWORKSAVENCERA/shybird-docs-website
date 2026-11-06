@@ -25,7 +25,14 @@ description: >- # this means to ignore newlines until "baseurl:"
   Documentation for Avencera's Shybird platform, the trusted platform for defining qualifications, creating support materials and delivering online courses.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://docs.shybird.ai" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: 
+lang: en-GB # <html lang> (Just the Docs defaults to en-US)
+locale: en_GB # og:locale (jekyll-seo-tag)
+author: # names the publisher Organization (and author) in the JSON-LD (jekyll-seo-tag)
+  name: Avencera Ltd
+  type: Organization
+# social:
+#   links: # official profiles, emitted as sameAs on the home page - e.g. LinkedIn, Companies House
+twitter_username:
 github_username:  
 
 # Build settings

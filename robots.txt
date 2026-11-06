@@ -1,0 +1,15 @@
+---
+layout: null
+sitemap: false
+---
+{%- comment -%}
+  Crawlers only read /robots.txt at the domain root, so the copy the staging build
+  writes to /staging/robots.txt is ignored. Staging is kept out of search results
+  by its noindex meta tag instead (see _includes/head_custom.html) - don't block
+  /staging/ here, or crawlers can't fetch the pages to see that tag.
+  AI crawlers are deliberately allowed: see the seo skill.
+{%- endcomment -%}
+User-agent: *
+Allow: /
+
+Sitemap: {{ site.url }}/sitemap.xml

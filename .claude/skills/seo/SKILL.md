@@ -24,7 +24,7 @@ The audit checks permalinks, front-matter descriptions, `<title>`, meta descript
 
 - Just the Docs calls **jekyll-seo-tag** (v2.9) in every page's `<head>`. That plugin writes `<title>`, the meta description, the canonical link, Open Graph and Twitter tags, and JSON-LD from `_config.yml` and page front matter. Don't hand-write these tags. Set the inputs instead.
 - `_includes/head_custom.html` is the theme hook for anything extra in `<head>`. It already adds `noindex` when `site.noindex` is set.
-- `sitemap.xml` and `llms.txt` at the repo root are hand-written Liquid templates. `robots.txt` doesn't exist yet.
+- `robots.txt`, `sitemap.xml` and `llms.txt` at the repo root are hand-written Liquid templates. The sitemap and llms.txt list every HTML page except those with `sitemap: false` (the 404 page and drafts), and they use `baseurl`, so staging lists `/staging/` URLs.
 - The staging build (`_config.staging.yml`) sets `baseurl: /staging` and `noindex: true`. Keep staging `noindex`. Don't block `/staging/` in `robots.txt`, because crawlers have to fetch a page to see its `noindex`.
 
 ### Inputs jekyll-seo-tag reads
@@ -34,14 +34,15 @@ The audit checks permalinks, front-matter descriptions, `<title>`, meta descript
 | `title` | `_config.yml` | Site name, used in `<title>` as "Page \| Site" and in `og:site_name` |
 | `description` | `_config.yml`, then each page's front matter | Meta description and `og:description`. Pages without one fall back to the site description |
 | `url` | `_config.yml` | Base for canonical and `og:url`. It must stay `https://docs.shybird.ai` |
-| `lang` | `_config.yml` | `<html lang>` (Just the Docs defaults to `en-US`). The content is British English, so set `en-GB` |
-| `locale` | `_config.yml` | `og:locale`. Use `en_GB` |
+| `lang` | `_config.yml` | `<html lang>` (Just the Docs defaults to `en-US`). Set to `en-GB` because the content is British English |
+| `locale` | `_config.yml` | `og:locale`. Set to `en_GB` |
 | `logo` | `_config.yml` | Organization logo in JSON-LD |
 | `image` | front matter, or `defaults:` in `_config.yml` | `og:image` and `twitter:image`: a 1200×630 PNG or JPG at an absolute path |
-| `social.name`, `social.links` | `_config.yml` | Organization name and `sameAs` profiles (LinkedIn, Companies House and so on) in JSON-LD |
+| `author` (`name: Avencera Ltd`, `type: Organization`) | `_config.yml` | Names the publisher and author Organization in JSON-LD. Already set |
+| `social.links` | `_config.yml` | `sameAs` profiles (LinkedIn, Companies House and so on) on the home page. Don't set `social.name`, because it renames the home page's WebSite |
 | `last_modified_at` | front matter | `dateModified` in JSON-LD |
 | `seo.type` | front matter | Overrides the JSON-LD `@type`, for example `TechArticle` |
-| `sitemap: false` | front matter | Your own convention. The sitemap template must check it (see below) |
+| `sitemap: false` | front matter | Not jekyll-seo-tag: the `sitemap.xml` and `llms.txt` templates leave the page out |
 
 ## Rules for every page
 
@@ -68,9 +69,9 @@ Assistants split pages into passages, retrieve the passages that match a questio
 
 ## Crawler files
 
-### robots.txt (production only)
+### robots.txt
 
-Create `robots.txt` at the repo root with `layout: null` front matter, and serve it only from the production root (`https://docs.shybird.ai/robots.txt`). Allow everything and point to the sitemap. AI crawlers are allowed by default. Blocking them (`GPTBot`, `OAI-SearchBot`, `ClaudeBot`, `PerplexityBot`, `Google-Extended`) removes the docs from those assistants, so for a public docs site leave them allowed unless the site owner decides otherwise.
+`robots.txt` allows everything and points to the sitemap. Crawlers only read it at the domain root, so the copy the staging build writes to `/staging/robots.txt` is ignored. AI crawlers are allowed by default. Blocking them (`GPTBot`, `OAI-SearchBot`, `ClaudeBot`, `PerplexityBot`, `Google-Extended`) removes the docs from those assistants, so for a public docs site leave them allowed unless the site owner decides otherwise.
 
 ```
 User-agent: *
@@ -81,9 +82,8 @@ Sitemap: https://docs.shybird.ai/sitemap.xml
 
 ### sitemap.xml
 
-- List only indexable HTML pages. Skip `/404.html`, `llms.txt`, `*.xml` and any page with `sitemap: false` or `nav_exclude` used for drafts.
-- Use `{{ site.url }}{{ site.baseurl }}{{ page.url }}`, so that staging's sitemap uses `/staging/` URLs.
-- Add `<lastmod>` from `page.last_modified_at` when it's set. Drop `<priority>` and `<changefreq>`, which Google ignores.
+- It lists `site.html_pages` except those with `sitemap: false`. Give drafts `sitemap: false` as well as `nav_exclude: true`.
+- It adds `<lastmod>` when a page sets `last_modified_at: YYYY-MM-DD`. Set it whenever you materially change a page.
 - Alternatively, replace the template with the `jekyll-sitemap` plugin (add it to the Gemfile and `plugins:`, then delete `sitemap.xml`). It honours `sitemap: false` and handles `lastmod`.
 
 ### llms.txt
@@ -102,15 +102,15 @@ The [llms.txt convention](https://llmstxt.org/) is a Markdown index for LLMs. Th
 - [Getting started with Shybird Define](https://docs.shybird.ai/define/getting-started): ...
 ```
 
-- Use absolute URLs (`{{ site.url }}{{ site.baseurl }}{{ page.url }}`), and give each link a `: description` taken from `page.description`.
-- Group links by section (`page.parent`), not in one flat list. Leave out the 404 page, `llms.txt` itself and drafts.
+- The template builds this automatically: there's an `## Overview` for top-level pages without children, then one `##` section per top-level page with children. Links are absolute, and the description after each link comes from `page.description`, so links have none until pages get descriptions.
+- The summary line is `site.description`. Keep it accurate.
 - Optionally add `llms-full.txt`, which holds the full Markdown of every page in one file, for assistants that ingest whole sites.
 
 ## Structured data
 
-jekyll-seo-tag emits `WebSite` on the home page and `WebPage` elsewhere, with a nameless `Organization` publisher. To improve it:
+jekyll-seo-tag emits `WebSite` on the home page and `WebPage` elsewhere, with Avencera Ltd as the publisher (from `author` in `_config.yml`). To improve it:
 
-- Set `social.name: Avencera Ltd` and `social.links` so that the Organization has a name and `sameAs` profiles.
+- Set `social.links` to Avencera's official profiles so they appear as `sameAs`.
 - Use `seo.type: TechArticle` on how-to pages if you want a more specific type.
 - If you add more JSON-LD (for example `BreadcrumbList` from `page.parent`, or `FAQPage` for a question-and-answer page), put it in `_includes/head_custom.html` behind a front-matter flag, and check it with https://validator.schema.org/.
 
