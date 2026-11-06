@@ -1,0 +1,12 @@
+---
+layout: vendor/compress
+---
+{% comment %}
+  Override of just-the-docs 0.12.0 _layouts/table_wrappers.html.
+  The theme wraps every table in a horizontally scrollable div. On narrow screens
+  that div scrolls, so keyboard users must be able to focus it (WCAG 2.1.1 / axe
+  scrollable-region-focusable), and a focusable region needs an accessible name (4.1.2).
+{% endcomment %}
+{% assign content_ = content | replace: '<table', '<div class="table-wrapper" tabindex="0" role="region" aria-label="Scrollable table"><table' %}
+{% assign content_ = content_ | replace: '</table>', '</table></div>' %}
+{{ content_ }}
