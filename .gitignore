@@ -4,6 +4,9 @@ _site
 .jekyll-metadata
 vendor
 
+# WCAG check output (scripts/a11y/check.mjs)
+a11y-report.json
+
 # macOS
 .DS_Store
 .claude/state/
