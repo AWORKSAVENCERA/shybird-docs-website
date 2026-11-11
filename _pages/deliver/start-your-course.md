@@ -1,6 +1,6 @@
 ---
 title: Start your course
-parent: Deliver
+parent: Shybird Deliver
 nav_order: 4
 permalink: /deliver/start-your-course
 description: How to find your courses in Shybird Deliver, answer onboarding questions and read your learning path of modules, tests and questionnaires.

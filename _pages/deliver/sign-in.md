@@ -1,6 +1,6 @@
 ---
 title: Sign in
-parent: Deliver
+parent: Shybird Deliver
 nav_order: 2
 permalink: /deliver/sign-in
 description: How to activate your Shybird Deliver account, sign in with an email code, Google or Microsoft, sign out, and what to do if you can't sign in.

@@ -1,6 +1,6 @@
 ---
 title: Find your way around
-parent: Deliver
+parent: Shybird Deliver
 nav_order: 3
 permalink: /deliver/find-your-way-around
 description: What each item in the Shybird Deliver menu does - Courses, Events, Resource Library, Content Questions, Technical Questions, Notifications and Settings.

@@ -1,6 +1,6 @@
 ---
 title: Getting started with Shybird Deliver
-parent: Deliver
+parent: Shybird Deliver
 nav_order: 1
 permalink: /deliver/getting-started
 description: A learner's guide to Shybird Deliver - how to sign in, find your way around, take your course, use the Learning Assistant and get help.

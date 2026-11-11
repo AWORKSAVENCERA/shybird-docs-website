@@ -1,6 +1,6 @@
 ---
-title: Getting started with the Admin Centre
+title: Getting started with the Shybird Admin Centre
 layout: default2
-parent: Client administration
+parent: Shybird Admin Centre
 permalink: /admin/getting-started
 ---

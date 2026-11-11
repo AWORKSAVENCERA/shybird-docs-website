@@ -4,7 +4,7 @@ Source for [docs.shybird.ai](https://docs.shybird.ai), the public documentation 
 
 Shybird helps awarding organisations to **define** qualifications, **design** support materials and **deliver** those materials to educators and participants. This site covers:
 
-- **Product guides** for Shybird Define, Design and Deliver, and the client Admin Centre.
+- **Product guides** for Shybird Define, Shybird Design and Shybird Deliver, and the Shybird Admin Centre.
 - **Trust centre**: the policies and practices behind security, data protection, privacy, accessibility, responsible AI, governance, business continuity and service status. Customers and prospective buyers read these pages during procurement and due diligence.
 - **Release notes**.
 
@@ -20,7 +20,7 @@ The site is a static [Jekyll](https://jekyllrb.com/) site that uses the [Just th
 │   ├── index.md           # Home page (/)
 │   ├── release-notes.md   # /release-notes
 │   ├── 404.html
-│   ├── client-admin/      # /admin       – Admin Centre
+│   ├── client-admin/      # /admin       – Shybird Admin Centre
 │   ├── define/            # /define      – Shybird Define
 │   ├── design/            # /design      – Shybird Design
 │   ├── deliver/           # /deliver     – Shybird Deliver
@@ -62,7 +62,7 @@ permalink: /trust/security  # Public URL. Must be unique.
 ```
 
 - Don't add an `# H1` heading in the body. `default2` renders `title` as the H1, so start the content at `##`.
-- To add a page to a section, create a file in that section's folder and set `parent:` to the section's `title`, for example `Trust`, `Define` or `Client administration`.
+- To add a page to a section, create a file in that section's folder and set `parent:` to the section's `title`, for example `Trust`, `Shybird Define` or `Shybird Admin Centre`.
 - To add a new top-level section, create a folder with an `index.md` that has a `title`, `nav_order` and `permalink`.
 - See the [Just the Docs navigation docs](https://just-the-docs.com/docs/navigation/) for more options.
 

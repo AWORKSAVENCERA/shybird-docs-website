@@ -9,7 +9,7 @@ The Shybird suite of products helps organisations to **define** qualifications, 
 ## Contents
 
 - [Trust]({% link _pages/trust/index.md %}) - The policies, processes and procedures we use to keep your data safe
-- [Client administration]({% link _pages/client-admin/index.md %}) - The Admin Centre used to manage your users and subscriptions
+- [Shybird Admin Centre]({% link _pages/client-admin/index.md %}) - Managing your users and subscriptions
 - [Shybird Define]({% link _pages/define/index.md %}) - Creating rigorous, detailed and controlled specifications for your qualifications
 - [Shybird Design]({% link _pages/design/index.md %}) - Creating support materials for your qualifications
 - [Shybird Deliver]({% link _pages/deliver/index.md %}) - A personalised experience for educators and/or participants

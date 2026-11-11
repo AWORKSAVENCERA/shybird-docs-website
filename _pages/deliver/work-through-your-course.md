@@ -1,6 +1,6 @@
 ---
 title: Complete your course
-parent: Deliver
+parent: Shybird Deliver
 nav_order: 5
 permalink: /deliver/work-through-your-course
 description: How to complete modules in Shybird Deliver, what each module status means, how to download your certificate and what happens when your course ends.

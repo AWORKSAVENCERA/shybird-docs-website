@@ -30,10 +30,6 @@
   definition: The person at your organisation who enrols you on courses and can give you your sign-in page address. Contact them if you can't sign in.
   scope: [/deliver]
 
-- term: Admin Centre
-  definition: Where your organisation manages its Shybird users and subscriptions.
-  aliases: [Administration Centre]
-
 - term: AI
   definition: Short for artificial intelligence. Computer systems that can carry out tasks such as generating, summarising or classifying content.
   aliases: [artificial intelligence]
@@ -278,6 +274,10 @@
 
 - term: Shared responsibility model
   definition: The split of security and continuity duties between the service provider and the customer. For example, the provider secures the platform and the customer manages its own user accounts, devices and integrations.
+
+- term: Shybird Admin Centre
+  definition: Where your organisation manages its Shybird users and subscriptions.
+  aliases: [Shybird Administration Centre]
 
 - term: Sign-in page
   definition: Your organisation's own web address for signing in to Shybird Deliver. You're given it when you're enrolled, or you can ask your admin.

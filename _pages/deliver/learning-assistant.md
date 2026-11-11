@@ -1,6 +1,6 @@
 ---
 title: Learning Assistant
-parent: Deliver
+parent: Shybird Deliver
 nav_order: 6
 permalink: /deliver/learning-assistant
 description: How to open and use the AI-enabled Learning Assistant in Shybird Deliver to ask questions about your course and get explanations of course content.

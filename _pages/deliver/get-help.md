@@ -1,6 +1,6 @@
 ---
 title: Get help
-parent: Deliver
+parent: Shybird Deliver
 nav_order: 8
 permalink: /deliver/get-help
 description: How to find answers in the Shybird Deliver FAQs and how to send a request to the support team if you need more help.

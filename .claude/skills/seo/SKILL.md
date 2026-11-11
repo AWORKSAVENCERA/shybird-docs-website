@@ -62,7 +62,7 @@ Assistants split pages into passages, retrieve the passages that match a questio
 - **Self-contained sections.** Each section should make sense when quoted alone. Name the subject ("Shybird stores customer data in the UK") rather than writing "It is stored in...". Avoid "as mentioned above".
 - **Headings phrased like questions or tasks.** Use the questions people ask: "Where is my data stored?" or "How do I add a user?". Don't use labels such as "Location".
 - **Be specific and checkable.** Use concrete facts: named standards and versions, regions, retention periods, response times, subprocessors and dates. Vague claims ("industry-leading security") are not cited. Specific ones are.
-- **Consistent entity names.** Always "Shybird" for the product and "Avencera Ltd" for the company, and the same product names everywhere (Shybird Define, Design and Deliver, the Admin Centre). Say once on the home page and on the Trust pages who operates the service and how the companies relate.
+- **Consistent entity names.** Always "Shybird" for the product and "Avencera Ltd" for the company, and the same product names everywhere (Shybird Define, Shybird Design, Shybird Deliver and the Shybird Admin Centre). Say once on the home page and on the Trust pages who operates the service and how the companies relate.
 - **Freshness.** On policy and Trust pages, show a visible "Last reviewed: 6 November 2026" line and set `last_modified_at` to match. Assistants and buyers both prefer dated content.
 - **Tables and lists for facts.** Comparison data, subprocessors and retention periods are extracted more reliably from tables than from prose.
 - **Don't hide text in images or PDFs.** If a PDF is the canonical document, also publish the key content as HTML.

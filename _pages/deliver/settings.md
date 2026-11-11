@@ -1,6 +1,6 @@
 ---
 title: Change your settings
-parent: Deliver
+parent: Shybird Deliver
 nav_order: 7
 permalink: /deliver/settings
 description: How to update your Shybird Deliver profile and photo, turn learning reminders on, off or pause them, and sign out of other devices.
