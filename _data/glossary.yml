@@ -55,6 +55,11 @@
 - term: BCDR
   definition: Short for business continuity and disaster recovery. How services keep running, or are restored, after a disruption such as a cloud outage or cyber incident.
 
+- term: Business case
+  definition: Your document explaining why the qualification is needed and for whom.
+  aliases: [business cases]
+  scope: [/define]
+
 - term: Certificate
   definition: Your proof that you've completed a course. You can download it once you've finished everything in your learning path.
   aliases: [certificates]
@@ -68,6 +73,11 @@
   definition: A complete learning programme made up of modules. You can study the courses you're enrolled on and register interest in others.
   aliases: [courses]
   scope: [/deliver]
+
+- term: Credit
+  definition: A measure of a qualification's size, worked out as total qualification time (TQT) divided by 10.
+  aliases: [credits]
+  scope: [/define]
 
 - term: Cryptographic erasure
   definition: Making encrypted data permanently unreadable by destroying the keys needed to decrypt it.
@@ -94,6 +104,10 @@
 
 - term: Defence in depth
   definition: Using several layers of security controls, so that if one fails, others still protect the system.
+
+- term: Design rules
+  definition: Your document specifying assessment, grading and structure rules. It can prescribe KSBs, learning outcomes and units.
+  scope: [/define]
 
 - term: Emergency change
   definition: A change made to deal with a critical incident, security vulnerability or urgent operational issue. It is reviewed and approved after it has been made.
@@ -124,6 +138,10 @@
   definition: A large AI model trained on broad data that can be adapted for many tasks, such as the models provided by AI companies.
   aliases: [foundation models]
 
+- term: GLH
+  definition: Short for guided learning hours. Supervised learning time.
+  aliases: [guided learning hours]
+
 - term: Guardrails
   definition: Controls that limit what an AI system can do or produce, to reduce the chance of harmful or inaccurate output.
   scope: [/trust]
@@ -145,8 +163,14 @@
   definition: A contract approved by the ICO that protects personal data when it is sent from the UK to a country without adequacy regulations.
   aliases: [International Data Transfer Agreements, IDTA, IDTAs]
 
+- term: KSB
+  definition: Short for knowledge, skills and behaviours. The statements that define what a learner must know and do.
+  aliases: [KSBs]
+  scope: [/define]
+
 - term: Labour market intelligence
-  definition: Data about jobs, skills and employment trends, such as which skills employers are asking for.
+  definition: Evidence about jobs, skills and employment trends, such as which occupations and skills employers are asking for.
+  aliases: [LMI]
 
 - term: Learning Assistant
   definition: An AI-enabled chat tool that answers your questions and explains course content in a way that's personalised to you.
@@ -179,9 +203,18 @@
 - term: Level AA
   definition: The middle of the three WCAG conformance levels (A, AA and AAA). It is the level most organisations and public sector bodies are expected to meet.
 
+- term: Lightcast
+  definition: The external provider of the job adverts and occupational profiles used in Modules 7 and 8.
+  scope: [/define]
+
 - term: Likert
   definition: A rating-scale question where you choose an answer on a scale, such as from 'strongly disagree' to 'strongly agree'.
   scope: [/deliver]
+
+- term: LO
+  definition: Short for learning outcome. In Shybird Define, a grouping of KSBs within a unit.
+  aliases: [LOs]
+  scope: [/define]
 
 - term: Load balancing
   definition: Spreading traffic across several servers so that no single server is overloaded and the service keeps running if one fails.
@@ -191,6 +224,11 @@
   aliases: [modules]
   scope: [/deliver]
 
+- term: Module
+  definition: One of the 19 numbered steps (0 to 18) in a Shybird Define project. You complete them in order, and each one unlocks when the one before it is complete.
+  aliases: [modules]
+  scope: [/define]
+
 - term: Multi-availability-zone deployment
   definition: Running a service across several physically separate data centres in a region, so it keeps working if one of them fails.
 
@@ -198,12 +236,20 @@
   definition: Signing in with two or more types of proof, such as a password and a code sent to your phone.
   aliases: [MFA]
 
+- term: Ofqual
+  definition: The qualifications regulator in England. Its rules of recognition are used as reference material in Shybird Define.
+
 - term: Onboarding
   definition: A short set of questions you may be asked the first time you open a course. You only need to answer them once.
   scope: [/deliver]
 
 - term: Penetration testing
   definition: An authorised, simulated attack on a system by security specialists to find weaknesses before attackers do.
+
+- term: Perimeter
+  definition: The confirmed scope and boundaries of the qualification, set in Module 2.
+  aliases: [perimeters]
+  scope: [/define]
 
 - term: Personal data
   definition: Any information that relates to an identified or identifiable living person, such as a name or email address.
@@ -215,6 +261,10 @@
   definition: A module you need to finish before the next one unlocks.
   scope: [/deliver]
 
+- term: Prescribed
+  definition: Content mandated by your design rules, which overrides generated content.
+  scope: [/define]
+
 - term: Privacy impact assessment
   definition: A structured review of how a project or system uses personal data, to identify and reduce privacy risks.
   aliases: [privacy impact assessments]
@@ -222,10 +272,19 @@
 - term: Privileged access
   definition: Administrator-level access that can change systems, settings or other users' accounts, so it needs extra controls.
 
+- term: Product strategy
+  definition: Your document describing what qualification is being built.
+  scope: [/define]
+
 - term: Prompt
   definition: The instructions or text given to an AI model to tell it what to produce.
   aliases: [prompts]
   scope: [/trust]
+
+- term: Provenance badge
+  definition: A tag on a KSB (BC, AD, PROF, AD+PROF, PRESCRIBED or MANUAL) showing where it came from.
+  aliases: [provenance badges]
+  scope: [/define]
 
 - term: Recovery point objective
   definition: The maximum amount of data, measured in time, that could be lost after a disruption. Shybird's typical target is 1 hour or less.
@@ -245,6 +304,11 @@
   definition: Resources and learning materials from all your courses, in one place.
   scope: [/deliver]
 
+- term: Retrieval layer
+  definition: "The searchable context that grounds the AI's work: your reference documents plus the knowledge-base documents you select. Also called the RAG (retrieval-augmented generation) layer."
+  aliases: [RAG layer, retrieval context]
+  scope: [/define]
+
 - term: Risk appetite
   definition: The amount and type of risk an organisation is willing to accept to meet its objectives.
 
@@ -255,6 +319,10 @@
 - term: Rollback
   definition: Undoing a change by returning a system to its previous working version.
   scope: [/trust]
+
+- term: RQF
+  definition: Short for Regulated Qualifications Framework. The level scale (1 to 8) used in England.
+  aliases: [Regulated Qualifications Framework]
 
 - term: SaaS
   definition: Short for Software as a Service. Software you use online through a subscription, rather than installing and running it yourself.
@@ -291,6 +359,11 @@
   definition: A supplier that a data processor uses to help process personal data, such as an AI, email or hosting provider.
   aliases: [sub-processors, subprocessor, subprocessors]
 
+- term: Synthetic panel
+  definition: A panel of AI-generated subject-matter experts, built in Module 3, that reviews AI output in later modules.
+  aliases: [synthetic expert panel]
+  scope: [/define]
+
 - term: Tabletop exercise
   definition: A discussion-based rehearsal where a team walks through how it would respond to a scenario, such as a major outage.
   aliases: [tabletop exercises]
@@ -306,6 +379,10 @@
 - term: Threat intelligence
   definition: Information about current and emerging cyber threats, used to anticipate and defend against attacks.
 
+- term: TQT
+  definition: Short for total qualification time. Guided learning hours plus unsupervised study time.
+  aliases: [total qualification time]
+
 - term: Trao
   definition: Avencera's technology partner, which builds and operates the Shybird platform on Avencera's instructions.
   scope: [/trust]
@@ -317,6 +394,11 @@
 - term: UK GDPR
   definition: The UK General Data Protection Regulation, the main UK law on how organisations must handle personal data.
   aliases: [UK General Data Protection Regulation]
+
+- term: Unit
+  definition: A coherent block of the qualification, made up of learning outcomes.
+  aliases: [units]
+  scope: [/define]
 
 - term: User acceptance testing
   definition: Testing by the people who will use a change, to confirm it works for them before it is released.
