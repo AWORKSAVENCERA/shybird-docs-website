@@ -61,6 +61,7 @@ defaults:
 exclude:
   - scripts/
   - README.md
+  - CLAUDE.md
 
 # Jekyll's default exclude list (always applied in addition to the above):
 #   - .sass-cache/
