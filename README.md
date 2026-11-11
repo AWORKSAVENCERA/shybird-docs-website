@@ -66,6 +66,21 @@ permalink: /trust/security  # Public URL. Must be unique.
 - To add a new top-level section, create a folder with an `index.md` that has a `title`, `nav_order` and `permalink`.
 - See the [Just the Docs navigation docs](https://just-the-docs.com/docs/navigation/) for more options.
 
+### Linking to other pages
+
+Link to another page with Jekyll's `link` tag and the path to that page's **source file**. Put any `#anchor` after the closing `%}`:
+
+```markdown
+See [Security]({% link _pages/trust/security.md %}).
+See [Active sessions]({% link _pages/deliver/settings.md %}#active-sessions).
+```
+
+**Don't write root-relative links** such as `[Security](/trust/security)`. The staging site is built under `/staging`, so a root-relative link on staging takes readers to the production page instead, and gives a 404 if that page exists only on staging. The `link` tag adds the right prefix for each site, and the build fails if the target file doesn't exist, so broken links are caught before deployment.
+
+In Liquid templates, where a URL is built from a variable and there's no fixed source file, use `{{ path | relative_url }}` instead.
+
+Links to external sites stay as full URLs, for example `[Avencera](https://avencera.ai)`.
+
 ## Development setup
 
 ### Option 1: Dev container (recommended)
@@ -172,7 +187,5 @@ Update `version.txt` when you release.
 
 These came up while reviewing the repo and are worth tidying:
 
-- **Duplicate permalink.** `_pages/trust/privacy.md` and `_pages/trust/data-protection.md` both use `permalink: /trust/privacy`, so one of them overwrites the other when the site builds. Give one of them a different URL, such as `/trust/data-protection`.
-- **Placeholder description.** `description` in `_config.yml` still contains the Jekyll boilerplate text, which shows up in search-engine metadata.
 - **Unused legacy templates.** The `x*` layouts and `_includes/nav.html`, `footer.html` and `xhead.html` are no longer used. `nav.html` also links to `/security`, `/privacy` and `/status`, which don't exist. Consider deleting these files.
-- **Incomplete content.** The Design section's `index.md` has no `nav_order`, so its position in the sidebar isn't fixed. Several section and getting-started pages are still empty stubs.
+- **Incomplete content.** Several section and getting-started pages are still empty stubs.
