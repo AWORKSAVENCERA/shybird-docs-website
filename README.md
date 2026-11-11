@@ -27,13 +27,11 @@ The site is a static [Jekyll](https://jekyllrb.com/) site that uses the [Just th
 │   └── trust/             # /trust       – Trust centre pages
 ├── _layouts/
 │   ├── default2.html      # Layout used by every page: Just the Docs default + page title as <h1>
-│   ├── table_wrappers.html # Theme override: keyboard-focusable scrollable tables (WCAG)
-│   └── x*.html            # Older Bootstrap-based layouts, not currently used
+│   └── table_wrappers.html # Theme override: keyboard-focusable scrollable tables (WCAG)
 ├── _includes/
-│   ├── footer_custom.html # Footer injected by Just the Docs
-│   └── nav.html, footer.html, xhead.html, logo.html  # Used only by the old x* layouts
+│   └── footer_custom.html # Footer injected by Just the Docs
 ├── _sass/color_schemes/avencera.scss  # Custom colour scheme (based on the dark scheme)
-├── assets/                # Images (logos, favicon) and CSS overrides
+├── assets/                # Logo, favicon and the glossary script
 ├── sitemap.xml            # Liquid-generated sitemap
 ├── llms.txt               # Liquid-generated index of pages for LLM crawlers
 ├── version.txt            # Site version number
@@ -187,5 +185,4 @@ Update `version.txt` when you release.
 
 These came up while reviewing the repo and are worth tidying:
 
-- **Unused legacy templates.** The `x*` layouts and `_includes/nav.html`, `footer.html` and `xhead.html` are no longer used. `nav.html` also links to `/security`, `/privacy` and `/status`, which don't exist. Consider deleting these files.
 - **Incomplete content.** Several section and getting-started pages are still empty stubs.

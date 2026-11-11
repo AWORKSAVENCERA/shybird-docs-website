@@ -33,7 +33,6 @@ permalink: /trust/security      # REQUIRED and must be unique - this is the publ
 - `_layouts/default2.html` wraps the theme's `default` layout and adds the page title as `<h1>`. Every page uses it.
 - `_layouts/table_wrappers.html` overrides the theme file of the same name so that scrollable tables are keyboard-focusable (WCAG). Keep it.
 - `_includes/footer_custom.html` is the site footer and a theme hook. The theme also offers `head_custom.html`, `header_custom.html` and `nav_footer_custom.html` as hooks.
-- `_layouts/x*.html`, `_includes/nav.html`, `footer.html`, `xhead.html` and `logo.html` are legacy Bootstrap templates that nothing uses. Don't build on them.
 - To change other theme behaviour, copy the file from the theme into the same path here and edit the copy. Find the theme with `bundle info just-the-docs --path`.
 - Colours are set in `_sass/color_schemes/avencera.scss`, which builds on the theme's `dark` scheme. Extra CSS goes in `assets/css/`.
 
