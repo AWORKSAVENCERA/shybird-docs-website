@@ -83,11 +83,18 @@ jobs:
           cache: npm
           cache-dependency-path: src-ci/scripts/a11y/package-lock.json
 
+      # The browser install pulls fonts from the runner's Ubuntu mirror, which
+      # sometimes has short DNS outages. Retry before failing the deploy.
       - name: Install checker
         working-directory: src-ci/scripts/a11y
         run: |
           npm ci
-          npx playwright install --with-deps chromium
+          for attempt in 1 2 3; do
+            npx playwright install --with-deps chromium && exit 0
+            echo "::warning::Browser install failed (attempt $attempt of 3); retrying in 30s"
+            sleep 30
+          done
+          exit 1
 
       # Failing pages are reported by path; anything under /staging/ is the staging site.
       - name: Run WCAG 2.2 AA checks (production and staging)
