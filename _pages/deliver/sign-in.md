@@ -30,7 +30,7 @@ On the sign-in page, you can select **Sign in with Google** or **Sign in with Mi
 
 Select the sign-out icon to sign out of your account securely. You'll need to sign in again to use Shybird Deliver.
 
-To sign out of another device, such as a shared or public computer, see [Active sessions](/deliver/settings#active-sessions).
+To sign out of another device, such as a shared or public computer, see [Active sessions]({% link _pages/deliver/settings.md %}#active-sessions).
 
 ## If you can't sign in
 

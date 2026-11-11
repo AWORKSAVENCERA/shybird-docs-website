@@ -22,7 +22,7 @@ Some words mean different things in different parts of Shybird. Where a definiti
 {% for entry in letter.items -%}
 {% if forloop.first %}{: .glossary-list}
 {% endif %}{{ entry.term }}
-: {{ entry.definition }}{% if entry.scope %} _(Used in {% for prefix in entry.scope %}{% assign section = site.pages | where: "permalink", prefix | first %}{% if section %}[{{ section.title }}]({{ prefix }}){% else %}{{ prefix }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}.)_{% endif %}
+: {{ entry.definition }}{% if entry.scope %} _(Used in {% for prefix in entry.scope %}{% assign section = site.pages | where: "permalink", prefix | first %}{% if section %}[{{ section.title }}]({{ prefix | relative_url }}){% else %}{{ prefix }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}.)_{% endif %}
 
 {% endfor -%}
 {% endfor %}

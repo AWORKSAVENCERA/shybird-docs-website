@@ -16,7 +16,7 @@ Source documents may incidentally contain personal data, for example names of au
 
 ## How AI is used 
 
-Shybird uses AI to help extract and generate content from what you upload. Every output is reviewed by a person before it is finalised, nothing is published automatically. A fuller explanation of how the AI works and what humans control is available in our [Responsible AI statement](/trust/responsible-ai). 
+Shybird uses AI to help extract and generate content from what you upload. Every output is reviewed by a person before it is finalised, nothing is published automatically. A fuller explanation of how the AI works and what humans control is available in our [Responsible AI statement]({% link _pages/trust/responsible-ai.md %}). 
 
 ## Who we share data with 
 

@@ -28,7 +28,7 @@ Modules can contain videos, articles, links to other websites, quiz questions an
 
 Your progress is saved automatically. You can leave a module at any time and carry on where you left off.
 
-While you're in a module, you can ask the [Learning Assistant](/deliver/learning-assistant) to explain the content.
+While you're in a module, you can ask the [Learning Assistant]({% link _pages/deliver/learning-assistant.md %}) to explain the content.
 
 ## Download your certificate
 

@@ -121,7 +121,7 @@ AI-generated outputs are intended to support user activities and are not automat
 
 Every output is reviewed by a person before it is finalised.
 
-Further information regarding our approach to AI governance is available within our [Responsible Use of Artificial Intelligence Statement](/trust/responsible-ai).
+Further information regarding our approach to AI governance is available within our [Responsible Use of Artificial Intelligence Statement]({% link _pages/trust/responsible-ai.md %}).
 
 ## Sub-processors and third-party service providers
 
@@ -182,7 +182,7 @@ Controls may include:
 - Incident management procedures
 - Secure software development practices
 
-Further information is available within our [Information Security Overview](/trust/security).
+Further information is available within our [Information Security Overview]({% link _pages/trust/security.md %}).
 
 ## Retention of information
 

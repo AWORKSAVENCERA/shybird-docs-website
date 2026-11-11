@@ -32,4 +32,4 @@ A learning path usually includes:
 
 What's included varies between courses. On some courses, some modules are optional.
 
-Next: [Complete your course](/deliver/work-through-your-course).
+Next: [Complete your course]({% link _pages/deliver/work-through-your-course.md %}).

@@ -110,7 +110,7 @@ We are committed to:
 - Managing retention and disposal requirements
 - Maintaining appropriate processor and supplier agreements
 
-Where AI capabilities process personal data, such processing is governed by our [privacy and data protection policies](/trust/privacy).
+Where AI capabilities process personal data, such processing is governed by our [privacy and data protection policies]({% link _pages/trust/privacy.md %}).
 
 ## Customer data and AI training
 

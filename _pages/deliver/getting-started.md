@@ -16,12 +16,12 @@ Shybird Deliver is the online platform for your course. Your course materials, l
 
 ## In this guide
 
-1. [Sign in](/deliver/sign-in) - activate your account, sign in and sign out, and what to do if you can't sign in.
-2. [Find your way around](/deliver/find-your-way-around) - what each item in the menu does.
-3. [Start your course](/deliver/start-your-course) - find your courses, answer onboarding questions and use your learning path.
-4. [Complete your course](/deliver/work-through-your-course) - complete modules, download your certificate and keep your materials.
-5. [Use the Learning Assistant](/deliver/learning-assistant) - ask the AI-enabled assistant about your course content.
-6. [Change your settings](/deliver/settings) - update your profile, learning reminders and signed-in devices.
-7. [Get help](/deliver/get-help) - read the FAQs or contact support.
+1. [Sign in]({% link _pages/deliver/sign-in.md %}) - activate your account, sign in and sign out, and what to do if you can't sign in.
+2. [Find your way around]({% link _pages/deliver/find-your-way-around.md %}) - what each item in the menu does.
+3. [Start your course]({% link _pages/deliver/start-your-course.md %}) - find your courses, answer onboarding questions and use your learning path.
+4. [Complete your course]({% link _pages/deliver/work-through-your-course.md %}) - complete modules, download your certificate and keep your materials.
+5. [Use the Learning Assistant]({% link _pages/deliver/learning-assistant.md %}) - ask the AI-enabled assistant about your course content.
+6. [Change your settings]({% link _pages/deliver/settings.md %}) - update your profile, learning reminders and signed-in devices.
+7. [Get help]({% link _pages/deliver/get-help.md %}) - read the FAQs or contact support.
 
-Words with a dotted underline have a short definition. Select the word to read it, and press Escape to close it. You can also read every definition in the [glossary](/glossary).
+Words with a dotted underline have a short definition. Select the word to read it, and press Escape to close it. You can also read every definition in the [glossary]({% link _pages/glossary.md %}).

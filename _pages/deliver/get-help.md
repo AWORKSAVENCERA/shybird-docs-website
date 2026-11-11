@@ -8,7 +8,7 @@ description: How to find answers in the Shybird Deliver FAQs and how to send a r
 
 You'll find the FAQs and support on the Technical Questions page. To get there, select **Technical Questions** (the headphones icon) in the menu. If you're in a module, select **Exit Module** to go back to your list of modules first.
 
-For questions about your course content, ask the [Learning Assistant](/deliver/learning-assistant) instead.
+For questions about your course content, ask the [Learning Assistant]({% link _pages/deliver/learning-assistant.md %}) instead.
 
 ## Read the FAQs
 
@@ -29,4 +29,4 @@ To see requests you've already sent, select **My Requests** in the top right.
 
 ## If you can't sign in
 
-See [If you can't sign in](/deliver/sign-in#if-you-cant-sign-in).
+See [If you can't sign in]({% link _pages/deliver/sign-in.md %}#if-you-cant-sign-in).
