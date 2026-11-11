@@ -24,8 +24,8 @@ permalink: /trust/security      # REQUIRED and must be unique - this is the publ
 
 - `layout: default2` is applied automatically by `defaults:` in `_config.yml`, so you can leave it out.
 - Section indexes are `_pages/<section>/index.md` with `permalink: /<section>`. The current top-level `nav_order` values are Home 1, Trust 3, Client administration 4, Define 5 and Deliver 7. Design and Release notes have no `nav_order`.
-- Before adding a page, check that its permalink isn't already taken: `grep -rn "^permalink:" _pages | sort -k2`. Two files with the same permalink silently overwrite each other. `/trust/privacy` is currently claimed by both `privacy.md` and `data-protection.md`.
-- Use absolute internal links (`/trust/security`). `baseurl` is empty, and production serves extensionless URLs.
+- Before adding a page, check that its permalink isn't already taken: `grep -rn "^permalink:" _pages | sort -k2`. Two files with the same permalink silently overwrite each other.
+- Link to other pages with the `link` tag on the source file: `[Security]({% link _pages/trust/security.md %})`, with any `#anchor` after the closing `%}`. Never write root-relative links like `(/trust/security)`. Production has an empty `baseurl` but staging is built with `baseurl: /staging`, so root-relative links on staging go to production pages (and 404 if the page only exists on staging). The `link` tag adds the baseurl and fails the build if the file doesn't exist. For URLs built in Liquid, where there's no fixed source file, use `{{ path | relative_url }}`.
 - Keep page bodies in Markdown. Raw HTML in a page bypasses the theme's styles and makes accessibility mistakes easier.
 
 ## Layouts, includes and theme overrides
