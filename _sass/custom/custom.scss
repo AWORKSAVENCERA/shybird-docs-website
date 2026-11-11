@@ -1,6 +1,17 @@
 // Site-wide custom styles. Just the Docs imports this file after the theme and
 // colour scheme, so the scheme's variables are available here.
 
+// Keep the sidebar the same width on every page. On large screens the theme
+// sizes the sidebar from the viewport width, which shrinks when a long page
+// shows a vertical scrollbar (in browsers whose scrollbars take up space, such
+// as on Windows). Always reserving the scrollbar's space keeps the width
+// steady. The sidebar's own nav list does the same, so its links don't shift
+// when an expanded section makes the list scroll.
+html,
+.site-nav {
+  scrollbar-gutter: stable;
+}
+
 // Primary buttons: the theme puts white text on the button colour, but white
 // on brand Orange is only about 2.8:1. Black on Orange is about 7.4:1
 // (WCAG 1.4.3).
