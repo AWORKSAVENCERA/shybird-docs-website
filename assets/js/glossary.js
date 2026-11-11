@@ -91,6 +91,9 @@
   while (walker.nextNode()) textNodes.push(walker.currentNode);
 
   var TIP_ID = 'glossary-tip';
+  // Opening punctuation right before a term, and closing punctuation right after it.
+  var LEADING = /[(\[‘“"']*$/;
+  var TRAILING = /^[.,;:!?)\]’”"'…]*/;
 
   textNodes.forEach(function (node) {
     var text = node.nodeValue;
@@ -109,8 +112,16 @@
       if (done.has(entry) || inRanges(quotes, start, start + word.length) || inAddress(text, start, start + word.length)) continue;
       done.add(entry);
 
+      // Punctuation touching the term goes in a no-wrap span with the button.
+      // A button is always laid out as an inline block, and browsers will
+      // break a line between it and the "." or "," after it, which leaves the
+      // punctuation alone at the start of the next line.
+      var before = text.slice(last, start).match(LEADING)[0];
+      var after = text.slice(start + word.length).match(TRAILING)[0];
+      var end = start + word.length + after.length;
+
       frag = frag || document.createDocumentFragment();
-      if (start > last) frag.appendChild(document.createTextNode(text.slice(last, start)));
+      if (start - before.length > last) frag.appendChild(document.createTextNode(text.slice(last, start - before.length)));
 
       var btn = document.createElement('button');
       btn.type = 'button';
@@ -120,9 +131,18 @@
       btn.setAttribute('aria-controls', TIP_ID);
       btn.dataset.term = entry.term;
       btn.dataset.definition = entry.definition;
-      frag.appendChild(btn);
+      if (before || after) {
+        var wrap = document.createElement('span');
+        wrap.className = 'glossary-nowrap';
+        if (before) wrap.appendChild(document.createTextNode(before));
+        wrap.appendChild(btn);
+        if (after) wrap.appendChild(document.createTextNode(after));
+        frag.appendChild(wrap);
+      } else {
+        frag.appendChild(btn);
+      }
 
-      last = start + word.length;
+      last = end;
     }
     if (!frag) return;
     if (last < text.length) frag.appendChild(document.createTextNode(text.slice(last)));

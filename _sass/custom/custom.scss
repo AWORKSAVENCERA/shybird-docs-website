@@ -57,15 +57,25 @@ html,
 // Glossary terms and their definition popups (assets/js/glossary.js,
 // _data/glossary.yml).
 
+// Glossary terms and table links are targets that need to be 24px tall
+// (WCAG 2.5.8). Lines at least 24px apart give them that height without
+// padding, so lines with a term are spaced the same as lines without, and
+// targets on neighbouring lines don't overlap. Small text such as tables on
+// narrow screens would otherwise have lines under 17px apart.
+.main-content :is(p, li, td, th, dt, dd) {
+  line-height: max(1.6em, 24px);
+}
+
 .glossary-term {
-  // Look like the surrounding text, not a button.
+  // Look like the surrounding text, not a button. Browsers always lay out a
+  // button as an inline block, whatever display says, so it is one line
+  // tall. Text around terms has lines at least 24px apart (see below), so
+  // that alone meets WCAG 2.5.8. The padding is a fallback for any shorter
+  // line, and the negative margin stops it from pushing lines apart.
   display: inline;
-  // Vertical padding on an inline box enlarges its hit area without changing
-  // line spacing. An inline box is about 1.3em tall, which is under 24px for
-  // small text such as tables on narrow screens, so pad it up to at least
-  // 24px tall (WCAG 2.5.8).
-  padding: max(2px, calc(12.5px - 0.65em)) 0;
-  margin: 0;
+  --glossary-pad: max(0px, calc(12px - 0.5lh));
+  padding: var(--glossary-pad) 0;
+  margin: calc(-1 * var(--glossary-pad)) 0;
   font: inherit;
   line-height: inherit;
   color: inherit;
@@ -92,6 +102,11 @@ html,
     outline: 2px solid $link-color;
     outline-offset: 2px;
   }
+}
+
+// Keeps a term and the punctuation touching it on one line (see glossary.js).
+.glossary-nowrap {
+  white-space: nowrap;
 }
 
 .glossary-tip {
