@@ -258,7 +258,7 @@ Website: [https://ico.org.uk](https://ico.org.uk)
 
 For privacy, data protection or information governance enquiries, please contact:
 
-Email: pmo@avencera.ai
+Email: [pmo@avencera.ai](mailto:pmo@avencera.ai)
 
 ## Continuous improvement
 
