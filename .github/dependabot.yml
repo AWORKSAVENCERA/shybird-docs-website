@@ -1,12 +1,70 @@
-# To get started with Dependabot version updates, you'll need to specify which
-# package ecosystems to update and where the package manifests are located.
-# Please see the documentation for more information:
-# https://docs.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
-# https://containers.dev/guide/dependabot
+# Dependabot keeps the repo's dependencies up to date and raises PRs for
+# security fixes.
+# https://docs.github.com/code-security/dependabot/working-with-dependabot/dependabot-options-reference
+#
+# PRs target staging (never main), so nothing is published until a PR is
+# merged and staging is pushed. Each PR runs the accessibility workflow,
+# which shows whether the WCAG check still passes on the new versions.
+#
+# Version updates come grouped, one PR per ecosystem each week. Security
+# updates also need "Dependabot security updates" switched on under
+# Settings -> Code security, and arrive as they are published.
 
 version: 2
 updates:
- - package-ecosystem: "devcontainers"
-   directory: "/"
-   schedule:
-     interval: weekly
+  # Jekyll, the Just the Docs theme and their gems (Gemfile / Gemfile.lock)
+  - package-ecosystem: "bundler"
+    directory: "/"
+    target-branch: "staging"
+    schedule:
+      interval: weekly
+    commit-message:
+      prefix: "build"
+    groups:
+      gems:
+        patterns: ["*"]
+
+  # WCAG checker (axe-core + Playwright), used in CI
+  - package-ecosystem: "npm"
+    directory: "/scripts/a11y"
+    target-branch: "staging"
+    schedule:
+      interval: weekly
+    commit-message:
+      prefix: "build"
+    groups:
+      a11y-checker:
+        patterns: ["*"]
+
+  # Playwright driver for the run-shybird-docs skill (local agent tooling)
+  - package-ecosystem: "npm"
+    directory: "/.claude/skills/run-shybird-docs"
+    target-branch: "staging"
+    schedule:
+      interval: weekly
+    commit-message:
+      prefix: "build"
+    groups:
+      docs-driver:
+        patterns: ["*"]
+
+  # Actions used by the workflows in .github/workflows
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    target-branch: "staging"
+    schedule:
+      interval: weekly
+    commit-message:
+      prefix: "ci"
+    groups:
+      actions:
+        patterns: ["*"]
+
+  # Dev container features (.devcontainer/devcontainer.json)
+  - package-ecosystem: "devcontainers"
+    directory: "/"
+    target-branch: "staging"
+    schedule:
+      interval: weekly
+    commit-message:
+      prefix: "chore"
