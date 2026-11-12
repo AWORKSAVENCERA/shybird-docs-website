@@ -46,6 +46,16 @@ Because of the `/staging` baseurl:
 - Link between pages with `[Text]({% link _pages/trust/security.md %})` (anchors go after `%}`). This also fails the build if the target is missing. **Never** use root-relative links like `(/trust/security)`, because on staging they go to production pages.
 - In Liquid, build URLs with `{{ path | relative_url }}`.
 
+## Planning and backlog (StoriesOnBoard)
+
+The backlog for this site is the **Shybird Docs** story map in StoriesOnBoard (slug `shybird-docs`, https://avencera.storiesonboard.com/storymap/shybird-docs). Use the StoriesOnBoard tools for any planning:
+
+- **Before planning** work (a plan, a roadmap, "what's next", scoping a change), read the map with `GetStoryMapCards` and base the plan on its existing cards, statuses and releases.
+- **Record work for later as a story on the map**, not as a file in the repo, a code comment or a note in chat. That includes follow-ups, known issues and technical debt.
+- Add a story as a subtask under the activity and task it belongs to. Title technical debt `Tech debt: <what to fix>`, set status `Todo` and leave it unscheduled unless the user names a release. The description says what the problem is, why it matters, a suggested fix and when it is done, and names the files and commit involved.
+- When work finishes a story, tell the user which card it was. Change a card's status only when the user asks.
+- If the StoriesOnBoard tools aren't available, say so and ask the user how to proceed. Don't fall back to recording it in the repo.
+
 ## Hooks and workflow rules
 
 - `.claude/hooks/track-edits.mjs` records each repo file you edit. `.claude/hooks/stop-gate.mjs` blocks you from finishing until (1) a **full** `node scripts/a11y/check.mjs` has passed since your last edit to a file that ends up in the built site, and (2) every file you edited is committed.
