@@ -4,6 +4,6 @@
   "type": "module",
   "description": "Headless Playwright driver for the Shybird docs site (agent tooling, not part of the site build)",
   "dependencies": {
-    "playwright": "1.61.1"
+    "playwright": "1.65.0"
   }
 }
