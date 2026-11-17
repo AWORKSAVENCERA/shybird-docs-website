@@ -20,7 +20,7 @@ The site is a static [Jekyll](https://jekyllrb.com/) site that uses the [Just th
 │   ├── index.md           # Home page (/)
 │   ├── release-notes.md   # /release-notes
 │   ├── 404.html
-│   ├── client-admin/      # /admin       – Shybird Admin Centre
+│   ├── subscription-admin/ # /subscription-admin – Shybird Admin Centre
 │   ├── define/            # /define      – Shybird Define
 │   ├── design/            # /design      – Shybird Design
 │   ├── deliver/           # /deliver     – Shybird Deliver
